@@ -1,0 +1,174 @@
+\hypertarget{classIndividualAnimal}{
+\section{IndividualAnimal Class Reference}
+\label{classIndividualAnimal}\index{IndividualAnimal@{IndividualAnimal}}
+}
+
+
+class \hyperlink{classIndividualAnimal}{IndividualAnimal}  
+
+
+
+
+{\ttfamily \#include $<$individualanimal.h$>$}
+
+Inheritance diagram for IndividualAnimal:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classIndividualAnimal}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIndividualAnimal_a44ab68443a3df25e11ec525a42782d43}{IndividualAnimal} (unsigned int u\_\-appetite=0, unsigned int u\_\-libido=0)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classIndividualAnimal_a145f082f37b866b1b36c4efd44e06900}{$\sim$IndividualAnimal} ()
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+\hypertarget{classIndividualAnimal_a78960ddab5b3649638ba6b97238edc06}{
+virtual bool \hyperlink{classIndividualAnimal_a78960ddab5b3649638ba6b97238edc06}{is\_\-alive} ()}
+\label{classIndividualAnimal_a78960ddab5b3649638ba6b97238edc06}
+
+\begin{DoxyCompactList}\small\item\em compute id the animal is alive \end{DoxyCompactList}\item 
+\hypertarget{classIndividualAnimal_adedd04efd80eea6cb721e830c545fe54}{
+unsigned int \& \hyperlink{classIndividualAnimal_adedd04efd80eea6cb721e830c545fe54}{appetite} ()}
+\label{classIndividualAnimal_adedd04efd80eea6cb721e830c545fe54}
+
+\begin{DoxyCompactList}\small\item\em set appetite \end{DoxyCompactList}\item 
+\hypertarget{classIndividualAnimal_a128b28bad2036c848c0d7525d366c7da}{
+unsigned int \& \hyperlink{classIndividualAnimal_a128b28bad2036c848c0d7525d366c7da}{libido} ()}
+\label{classIndividualAnimal_a128b28bad2036c848c0d7525d366c7da}
+
+\begin{DoxyCompactList}\small\item\em set libido \end{DoxyCompactList}\item 
+\hypertarget{classIndividualAnimal_a38f21a847bdd5c01c782ea0192f27c57}{
+unsigned int \hyperlink{classIndividualAnimal_a38f21a847bdd5c01c782ea0192f27c57}{appetite} () const }
+\label{classIndividualAnimal_a38f21a847bdd5c01c782ea0192f27c57}
+
+\begin{DoxyCompactList}\small\item\em get appetite \end{DoxyCompactList}\item 
+\hypertarget{classIndividualAnimal_ac245ea10d23617781d639622bd65d75d}{
+unsigned int \hyperlink{classIndividualAnimal_ac245ea10d23617781d639622bd65d75d}{libido} () const }
+\label{classIndividualAnimal_ac245ea10d23617781d639622bd65d75d}
+
+\begin{DoxyCompactList}\small\item\em get libido \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classIndividualAnimal_a1ffbeb4d91923e91679c96f1e45e5071}{m\_\-appetite}
+\begin{DoxyCompactList}\small\item\em appetite factor \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classIndividualAnimal_a60d160394b92b61685a63f3c91164938}{m\_\-libido}
+\begin{DoxyCompactList}\small\item\em libido factor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{classIndividualAnimal_abaf2e3cb53c5c0004f0fa218ab980965}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classIndividualAnimal}{IndividualAnimal} \&an)
+\begin{DoxyCompactList}\small\item\em ostream operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classIndividualAnimal}{IndividualAnimal} 
+
+this class rappresent the animal see as the final and real living form of life. each animal differs from the other by his appetite and his libido 
+
+Definition at line 39 of file individualanimal.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIndividualAnimal_a44ab68443a3df25e11ec525a42782d43}{
+\index{IndividualAnimal@{IndividualAnimal}!IndividualAnimal@{IndividualAnimal}}
+\index{IndividualAnimal@{IndividualAnimal}!IndividualAnimal@{IndividualAnimal}}
+\subsubsection[{IndividualAnimal}]{\setlength{\rightskip}{0pt plus 5cm}IndividualAnimal::IndividualAnimal (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{u\_\-appetite = {\ttfamily 0}, }
+\item[{unsigned int}]{u\_\-libido = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classIndividualAnimal_a44ab68443a3df25e11ec525a42782d43}
+
+
+default constructor 
+
+set appetite and libido, if none were given they were setted to 0 both. 
+
+Definition at line 37 of file individualanimal.cpp.
+
+\hypertarget{classIndividualAnimal_a145f082f37b866b1b36c4efd44e06900}{
+\index{IndividualAnimal@{IndividualAnimal}!$\sim$IndividualAnimal@{$\sim$IndividualAnimal}}
+\index{$\sim$IndividualAnimal@{$\sim$IndividualAnimal}!IndividualAnimal@{IndividualAnimal}}
+\subsubsection[{$\sim$IndividualAnimal}]{\setlength{\rightskip}{0pt plus 5cm}IndividualAnimal::$\sim$IndividualAnimal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classIndividualAnimal_a145f082f37b866b1b36c4efd44e06900}
+
+
+default destructor 
+
+does nothing 
+
+Definition at line 44 of file individualanimal.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classIndividualAnimal_abaf2e3cb53c5c0004f0fa218ab980965}{
+\index{IndividualAnimal@{IndividualAnimal}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!IndividualAnimal@{IndividualAnimal}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{os, }
+\item[{const {\bf IndividualAnimal} \&}]{an}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classIndividualAnimal_abaf2e3cb53c5c0004f0fa218ab980965}
+
+
+ostream operator 
+
+prints al main info of the animal 
+
+Definition at line 76 of file individualanimal.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classIndividualAnimal_a1ffbeb4d91923e91679c96f1e45e5071}{
+\index{IndividualAnimal@{IndividualAnimal}!m\_\-appetite@{m\_\-appetite}}
+\index{m\_\-appetite@{m\_\-appetite}!IndividualAnimal@{IndividualAnimal}}
+\subsubsection[{m\_\-appetite}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf IndividualAnimal::m\_\-appetite}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classIndividualAnimal_a1ffbeb4d91923e91679c96f1e45e5071}
+
+
+appetite factor 
+
+it rappresents the propensity of the animal to eat and rise when the hp of the animal were under the health status
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classSpecied_a7d716a70352c40bbe1ff3bd8c5719f29}{m\_\-health\_\-status} 
+\end{DoxySeeAlso}
+
+
+Definition at line 85 of file individualanimal.h.
+
+\hypertarget{classIndividualAnimal_a60d160394b92b61685a63f3c91164938}{
+\index{IndividualAnimal@{IndividualAnimal}!m\_\-libido@{m\_\-libido}}
+\index{m\_\-libido@{m\_\-libido}!IndividualAnimal@{IndividualAnimal}}
+\subsubsection[{m\_\-libido}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf IndividualAnimal::m\_\-libido}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classIndividualAnimal_a60d160394b92b61685a63f3c91164938}
+
+
+libido factor 
+
+pay attention: parental controll pending. btw the libido factor determines the propensity of the animal to reproduce and rises when the animal's hp where under the health status \begin{DoxySeeAlso}{See also}
+\hyperlink{classSpecied_a7d716a70352c40bbe1ff3bd8c5719f29}{m\_\-health\_\-status} 
+\end{DoxySeeAlso}
+
+
+Definition at line 93 of file individualanimal.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{individualanimal_8h}{individualanimal.h}\item 
+sources/\hyperlink{individualanimal_8cpp}{individualanimal.cpp}\end{DoxyCompactItemize}

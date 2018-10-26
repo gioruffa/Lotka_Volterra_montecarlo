@@ -1,0 +1,185 @@
+\hypertarget{classExistance}{
+\section{Existance Class Reference}
+\label{classExistance}\index{Existance@{Existance}}
+}
+
+
+class \hyperlink{classExistance}{Existance} the most abstracted object  
+
+
+
+
+{\ttfamily \#include $<$existance.h$>$}
+
+Inheritance diagram for Existance:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classExistance}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef long unsigned int \hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{id\_\-type}
+\begin{DoxyCompactList}\small\item\em the type of the id\_\-number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classExistance_a415f1af7d255f9301b0a12c801404d6a}{
+\hyperlink{classExistance_a415f1af7d255f9301b0a12c801404d6a}{Existance} (\hyperlink{classDateOfBirth}{DateOfBirth} u\_\-birth\_\-date=\hyperlink{classDateOfBirth}{DateOfBirth}(0, 0), \hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{id\_\-type} u\_\-id\_\-number=0)}
+\label{classExistance_a415f1af7d255f9301b0a12c801404d6a}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classExistance_a38ff86bfab06fdc0b19af335b502165a}{
+\hyperlink{classExistance_a38ff86bfab06fdc0b19af335b502165a}{$\sim$Existance} ()}
+\label{classExistance_a38ff86bfab06fdc0b19af335b502165a}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classExistance_ab86c25a779d30c45e26031e47c7b45dc}{is\_\-alive} ()=0
+\begin{DoxyCompactList}\small\item\em is the existance alive? \end{DoxyCompactList}\item 
+\hyperlink{classDateOfBirth}{DateOfBirth} \& \hyperlink{classExistance_a5ed0fe6062a67abff1df3ce4cae109b0}{birth\_\-date} ()
+\begin{DoxyCompactList}\small\item\em the birth date \end{DoxyCompactList}\item 
+\hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{id\_\-type} \& \hyperlink{classExistance_a23533e617509b239de916fe90811f27a}{id\_\-number} ()
+\begin{DoxyCompactList}\small\item\em the id numer \end{DoxyCompactList}\item 
+\hypertarget{classExistance_a1bf4ab1ba9b880175b49f914736ccd54}{
+const \hyperlink{classDateOfBirth}{DateOfBirth} \& \hyperlink{classExistance_a1bf4ab1ba9b880175b49f914736ccd54}{birth\_\-date} () const }
+\label{classExistance_a1bf4ab1ba9b880175b49f914736ccd54}
+
+\begin{DoxyCompactList}\small\item\em get the birth date \end{DoxyCompactList}\item 
+\hypertarget{classExistance_ad8b3c9cfa5c5be0f1420b4e43e78e227}{
+\hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{id\_\-type} \hyperlink{classExistance_ad8b3c9cfa5c5be0f1420b4e43e78e227}{id\_\-number} () const }
+\label{classExistance_ad8b3c9cfa5c5be0f1420b4e43e78e227}
+
+\begin{DoxyCompactList}\small\item\em get the id\_\-number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDateOfBirth}{DateOfBirth} \hyperlink{classExistance_aee261695e56ed7a8d1d72aea3beb8fae}{m\_\-birth\_\-date}
+\begin{DoxyCompactList}\small\item\em when an Existace is created \end{DoxyCompactList}\item 
+\hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{id\_\-type} \hyperlink{classExistance_a6efaefb1b86cde1108adb1e71f33f84f}{m\_\-id\_\-number}
+\begin{DoxyCompactList}\small\item\em unique identifier of a form of life \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classExistance}{Existance} the most abstracted object 
+
+this class is the most abstract object and it's pure virtual class. all the form of life in the program eredit from her 
+
+Definition at line 40 of file existance.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classExistance_a82c4092964457cd7da30d53072c62f1a}{
+\index{Existance@{Existance}!id\_\-type@{id\_\-type}}
+\index{id\_\-type@{id\_\-type}!Existance@{Existance}}
+\subsubsection[{id\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef long unsigned int {\bf Existance::id\_\-type}}}
+\label{classExistance_a82c4092964457cd7da30d53072c62f1a}
+
+
+the type of the id\_\-number 
+
+long unsigned int 
+
+Definition at line 46 of file existance.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classExistance_a5ed0fe6062a67abff1df3ce4cae109b0}{
+\index{Existance@{Existance}!birth\_\-date@{birth\_\-date}}
+\index{birth\_\-date@{birth\_\-date}!Existance@{Existance}}
+\subsubsection[{birth\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DateOfBirth} \& Existance::birth\_\-date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classExistance_a5ed0fe6062a67abff1df3ce4cae109b0}
+
+
+the birth date 
+
+da birth date \begin{DoxySeeAlso}{See also}
+\hyperlink{classDateOfBirth}{DateOfBirth} 
+
+\hyperlink{classExistance_aee261695e56ed7a8d1d72aea3beb8fae}{m\_\-birth\_\-date} 
+\end{DoxySeeAlso}
+
+
+Definition at line 48 of file existance.cpp.
+
+\hypertarget{classExistance_a23533e617509b239de916fe90811f27a}{
+\index{Existance@{Existance}!id\_\-number@{id\_\-number}}
+\index{id\_\-number@{id\_\-number}!Existance@{Existance}}
+\subsubsection[{id\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Existance::id\_\-type} \& Existance::id\_\-number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classExistance_a23533e617509b239de916fe90811f27a}
+
+
+the id numer 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classExistance_a6efaefb1b86cde1108adb1e71f33f84f}{m\_\-id\_\-number} 
+\end{DoxySeeAlso}
+
+
+Definition at line 53 of file existance.cpp.
+
+\hypertarget{classExistance_ab86c25a779d30c45e26031e47c7b45dc}{
+\index{Existance@{Existance}!is\_\-alive@{is\_\-alive}}
+\index{is\_\-alive@{is\_\-alive}!Existance@{Existance}}
+\subsubsection[{is\_\-alive}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Existance::is\_\-alive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classExistance_ab86c25a779d30c45e26031e47c7b45dc}
+
+
+is the existance alive? 
+
+returns true if the object is alive. existance cannot be whithout their specifications, so this member is pure virtual 
+
+Implemented in \hyperlink{classIndividualAnimal_a78960ddab5b3649638ba6b97238edc06}{IndividualAnimal}, \hyperlink{classSpecied_a2173ab978d5cd2c2de4e25a4d6eb3152}{Specied}, and \hyperlink{classVivent_a253291090ae6207f8f51f8ff669d9d17}{Vivent}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classExistance_aee261695e56ed7a8d1d72aea3beb8fae}{
+\index{Existance@{Existance}!m\_\-birth\_\-date@{m\_\-birth\_\-date}}
+\index{m\_\-birth\_\-date@{m\_\-birth\_\-date}!Existance@{Existance}}
+\subsubsection[{m\_\-birth\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf DateOfBirth} {\bf Existance::m\_\-birth\_\-date}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classExistance_aee261695e56ed7a8d1d72aea3beb8fae}
+
+
+when an Existace is created 
+
+every form of life has a date of birth. see \hyperlink{classDateOfBirth}{DateOfBirth} for more info. \begin{DoxySeeAlso}{See also}
+\hyperlink{classDateOfBirth}{DateOfBirth} 
+\end{DoxySeeAlso}
+
+
+Definition at line 88 of file existance.h.
+
+\hypertarget{classExistance_a6efaefb1b86cde1108adb1e71f33f84f}{
+\index{Existance@{Existance}!m\_\-id\_\-number@{m\_\-id\_\-number}}
+\index{m\_\-id\_\-number@{m\_\-id\_\-number}!Existance@{Existance}}
+\subsubsection[{m\_\-id\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}{\bf id\_\-type} {\bf Existance::m\_\-id\_\-number}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classExistance_a6efaefb1b86cde1108adb1e71f33f84f}
+
+
+unique identifier of a form of life 
+
+this data member is different between all the form of life istanced. this property has to be granted by the gestion algorithm 
+
+Definition at line 96 of file existance.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{existance_8h}{existance.h}\item 
+sources/\hyperlink{existance_8cpp}{existance.cpp}\end{DoxyCompactItemize}

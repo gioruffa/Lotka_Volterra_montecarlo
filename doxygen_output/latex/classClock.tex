@@ -1,0 +1,141 @@
+\hypertarget{classClock}{
+\section{Clock Class Reference}
+\label{classClock}\index{Clock@{Clock}}
+}
+
+
+real clock able to give the time of the sistem  
+
+
+
+
+{\ttfamily \#include $<$time.h$>$}
+
+Inheritance diagram for Clock:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classClock}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classClock_a28d065d80392b50936715f34dfc0b1fc}{Clock} (long int u\_\-abs=0, double u\_\-rel=0)
+\begin{DoxyCompactList}\small\item\em constructor giving initial conditions \end{DoxyCompactList}\item 
+virtual void \hyperlink{classClock_af0ac46dd780987f2daa69d580e4d5d51}{tick} (unsigned int times=1)
+\begin{DoxyCompactList}\small\item\em make the clock tick \end{DoxyCompactList}\item 
+\hypertarget{classClock_aca15b58218d8e1a706cbb6217e720267}{
+void \hyperlink{classClock_aca15b58218d8e1a706cbb6217e720267}{calculate\_\-relative} ()}
+\label{classClock_aca15b58218d8e1a706cbb6217e720267}
+
+\begin{DoxyCompactList}\small\item\em calculate the relative time \end{DoxyCompactList}\item 
+\hypertarget{classClock_a1eedc5d52b167ee02f4fe59696bf9d62}{
+long int \& \hyperlink{classClock_a1eedc5d52b167ee02f4fe59696bf9d62}{abs} ()}
+\label{classClock_a1eedc5d52b167ee02f4fe59696bf9d62}
+
+\begin{DoxyCompactList}\small\item\em set abs \end{DoxyCompactList}\item 
+\hypertarget{classClock_af885542ddd8e598b0ced62edcde7f4fa}{
+double \& \hyperlink{classClock_af885542ddd8e598b0ced62edcde7f4fa}{rel} ()}
+\label{classClock_af885542ddd8e598b0ced62edcde7f4fa}
+
+\begin{DoxyCompactList}\small\item\em set rel \end{DoxyCompactList}\item 
+\hypertarget{classClock_a97bb93f3f1f6b6994e7a737ff88ec15d}{
+const long int \& \hyperlink{classClock_a97bb93f3f1f6b6994e7a737ff88ec15d}{abs} () const }
+\label{classClock_a97bb93f3f1f6b6994e7a737ff88ec15d}
+
+\begin{DoxyCompactList}\small\item\em get abs \end{DoxyCompactList}\item 
+\hypertarget{classClock_a7da14c0eb922ca5a4bdffb8159ca7b41}{
+const double \& \hyperlink{classClock_a7da14c0eb922ca5a4bdffb8159ca7b41}{rel} () const }
+\label{classClock_a7da14c0eb922ca5a4bdffb8159ca7b41}
+
+\begin{DoxyCompactList}\small\item\em get rel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classClock_a378ea759c6757fe17d11e8636df2da3b}{
+long int \hyperlink{classClock_a378ea759c6757fe17d11e8636df2da3b}{m\_\-absolute\_\-time}}
+\label{classClock_a378ea759c6757fe17d11e8636df2da3b}
+
+\begin{DoxyCompactList}\small\item\em absolute time \end{DoxyCompactList}\item 
+\hypertarget{classClock_a5276273aac712ca2f007c19d80f0f014}{
+double \hyperlink{classClock_a5276273aac712ca2f007c19d80f0f014}{m\_\-relative\_\-time}}
+\label{classClock_a5276273aac712ca2f007c19d80f0f014}
+
+\begin{DoxyCompactList}\small\item\em relative time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classClock_a725f3e6c50a193ec896ee00bcc84ce04}{
+std::ostream \& \hyperlink{classClock_a725f3e6c50a193ec896ee00bcc84ce04}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classClock}{Clock} \&clock)}
+\label{classClock_a725f3e6c50a193ec896ee00bcc84ce04}
+
+\begin{DoxyCompactList}\small\item\em prints the time \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+real clock able to give the time of the sistem 
+
+give the absolute and relative time of the sistem 
+
+Definition at line 68 of file time.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classClock_a28d065d80392b50936715f34dfc0b1fc}{
+\index{Clock@{Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!Clock@{Clock}}
+\subsubsection[{Clock}]{\setlength{\rightskip}{0pt plus 5cm}Clock::Clock (
+\begin{DoxyParamCaption}
+\item[{long int}]{u\_\-abs = {\ttfamily 0}, }
+\item[{double}]{u\_\-rel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classClock_a28d065d80392b50936715f34dfc0b1fc}
+
+
+constructor giving initial conditions 
+
+construcor giving the initial absolute time and relative time. default is 0,0
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-abs} & starting absolute time \\
+\hline
+{\em u\_\-rel} & starting relative time \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 46 of file time.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classClock_af0ac46dd780987f2daa69d580e4d5d51}{
+\index{Clock@{Clock}!tick@{tick}}
+\index{tick@{tick}!Clock@{Clock}}
+\subsubsection[{tick}]{\setlength{\rightskip}{0pt plus 5cm}void Clock::tick (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{times = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classClock_af0ac46dd780987f2daa69d580e4d5d51}
+
+
+make the clock tick 
+
+increase the m\_\-absolute time and calculate the relative time 
+
+Implements \hyperlink{classAbstractClock_ad161ad323e50eeba01cc97720a2c469e}{AbstractClock}.
+
+
+
+Definition at line 69 of file time.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{time_8h}{time.h}\item 
+sources/time.cpp\end{DoxyCompactItemize}

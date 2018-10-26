@@ -1,0 +1,32 @@
+\hypertarget{time_8h}{
+\section{sources/time.h File Reference}
+\label{time_8h}\index{sources/time.h@{sources/time.h}}
+}
+
+
+classes to manipulate and determine the time of the system  
+
+
+{\ttfamily \#include $<$iostream$>$}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAbstractClock}{AbstractClock}
+\begin{DoxyCompactList}\small\item\em abstract class for the clock \end{DoxyCompactList}\item 
+class \hyperlink{classClock}{Clock}
+\begin{DoxyCompactList}\small\item\em real clock able to give the time of the sistem \end{DoxyCompactList}\item 
+class \hyperlink{classDateOfBirth}{DateOfBirth}
+\begin{DoxyCompactList}\small\item\em simple class for the date of birh \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classes to manipulate and determine the time of the system is really difficult to determine time in this context.
+
+we have developed two types of time: relative and absolute
+
+relative time: the easyest way is to think to what is a ecosistem cicle. An ecosistem cicle is concluded when all the animals in the ecosistem where called. for \char`\"{}call\char`\"{} we intend every time a form of life interact with another form of life, so if an animal fight whith another this constitutes o total of 2 calls) as you can imagine it could be really difficult to controll that all the animals were called so if we give to te ecosistem cicle a value of 1, each call to an animal has the time value interval of 1/total\_\-number\_\-of\_\-forms\_\-of\_\-life present in the ecosistem. so the running relative time is the number of cicles passed and the quantiti of the cicle running
+
+absolute time: nothing different from the number of calls occured from the creation of the first form of life 
+
+Definition in file \hyperlink{time_8h_source}{time.h}.
+

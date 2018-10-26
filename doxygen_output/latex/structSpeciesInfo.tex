@@ -1,0 +1,434 @@
+\hypertarget{structSpeciesInfo}{
+\section{SpeciesInfo Struct Reference}
+\label{structSpeciesInfo}\index{SpeciesInfo@{SpeciesInfo}}
+}
+
+
+species info containers  
+
+
+
+
+{\ttfamily \#include $<$speciesinfo.h$>$}
+
+Inheritance diagram for SpeciesInfo:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structSpeciesInfo}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structSpeciesInfo_aa70735bd441c2465b36bef55cfabb1bf}{
+typedef std::map$<$ unsigned int, \hyperlink{structLike}{Like} $>$ \hyperlink{structSpeciesInfo_aa70735bd441c2465b36bef55cfabb1bf}{likings\_\-map\_\-tp}}
+\label{structSpeciesInfo_aa70735bd441c2465b36bef55cfabb1bf}
+
+\begin{DoxyCompactList}\small\item\em likings type \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a06dc895ad5da1d736e971e0690194c5f}{
+typedef likings\_\-map\_\-tp::iterator \hyperlink{structSpeciesInfo_a06dc895ad5da1d736e971e0690194c5f}{likings\_\-it}}
+\label{structSpeciesInfo_a06dc895ad5da1d736e971e0690194c5f}
+
+\begin{DoxyCompactList}\small\item\em iteratore per membro di likings \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_acd0e4c451993ca95135fcdc8840c344b}{
+typedef likings\_\-map\_\-tp::const\_\-iterator \hyperlink{structSpeciesInfo_acd0e4c451993ca95135fcdc8840c344b}{likings\_\-const\_\-it}}
+\label{structSpeciesInfo_acd0e4c451993ca95135fcdc8840c344b}
+
+\begin{DoxyCompactList}\small\item\em iteratore constante per membro di likings \end{DoxyCompactList}\item 
+typedef std::multiset$<$ \hyperlink{structLike}{Like}, \hyperlink{structLikeFactorCmp}{LikeFactorCmp} $>$ \hyperlink{structSpeciesInfo_aab6fabec09f9eb5a26e680d1d6f9d037}{likings\_\-by\_\-lk\_\-factor\_\-tp}
+\begin{DoxyCompactList}\small\item\em multimap sorted by like\_\-factor \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_ac9d1365506aed6cd1daf2ba982a80473}{
+typedef likings\_\-by\_\-lk\_\-factor\_\-tp::iterator \hyperlink{structSpeciesInfo_ac9d1365506aed6cd1daf2ba982a80473}{likings\_\-by\_\-lk\_\-factor\_\-iterator}}
+\label{structSpeciesInfo_ac9d1365506aed6cd1daf2ba982a80473}
+
+\begin{DoxyCompactList}\small\item\em iterator to access like sorted by lk factor \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a1e10640a53fd3c1524fcafcdfe3d1a10}{
+typedef likings\_\-by\_\-lk\_\-factor\_\-tp::const\_\-iterator \hyperlink{structSpeciesInfo_a1e10640a53fd3c1524fcafcdfe3d1a10}{likings\_\-by\_\-lk\_\-factor\_\-const\_\-iterator}}
+\label{structSpeciesInfo_a1e10640a53fd3c1524fcafcdfe3d1a10}
+
+\begin{DoxyCompactList}\small\item\em const iterator to access like sorted by lk factor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structSpeciesInfo_a6745ba94ebb519cd684df916edf7aa68}{
+\hyperlink{structSpeciesInfo_a6745ba94ebb519cd684df916edf7aa68}{SpeciesInfo} (unsigned int u\_\-species\_\-id=0, std::string u\_\-species\_\-name=\char`\"{}no\_\-name\char`\"{}, unsigned int u\_\-life\_\-coast=1, unsigned int u\_\-health\_\-status=50, unsigned int u\_\-calories=1, float u\_\-life\_\-space=10, bool u\_\-is\_\-animal=0, std::map$<$ unsigned int, \hyperlink{structLike}{Like} $>$ u\_\-likings=std::map$<$ unsigned int, \hyperlink{structLike}{Like} $>$(), unsigned int u\_\-tot\_\-spec\_\-num=0)}
+\label{structSpeciesInfo_a6745ba94ebb519cd684df916edf7aa68}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a8dace9e28c3e6237fa1b7f894ff3b239}{
+\hyperlink{structSpeciesInfo_a8dace9e28c3e6237fa1b7f894ff3b239}{$\sim$SpeciesInfo} ()}
+\label{structSpeciesInfo_a8dace9e28c3e6237fa1b7f894ff3b239}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a3d012834e84c8d878436a739f141f154}{
+bool \hyperlink{structSpeciesInfo_a3d012834e84c8d878436a739f141f154}{is\_\-full} ()}
+\label{structSpeciesInfo_a3d012834e84c8d878436a739f141f154}
+
+\begin{DoxyCompactList}\small\item\em controll if there is a species id instantiated \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a2d1e5213bc29602ac60cde0e5e5f3b00}{
+bool \hyperlink{structSpeciesInfo_a2d1e5213bc29602ac60cde0e5e5f3b00}{insert\_\-like} (const \hyperlink{structLike}{Like} lk)}
+\label{structSpeciesInfo_a2d1e5213bc29602ac60cde0e5e5f3b00}
+
+\begin{DoxyCompactList}\small\item\em insert a \hyperlink{structLike}{Like} in likings map \end{DoxyCompactList}\item 
+bool \hyperlink{structSpeciesInfo_a5c1c1c98c4f8bf4ae0b85d3c3943fff5}{insert\_\-like} (const int u\_\-spec\_\-id, const int u\_\-like\_\-factor)
+\begin{DoxyCompactList}\small\item\em create and insert a like whith passed parameter \end{DoxyCompactList}\item 
+int \hyperlink{structSpeciesInfo_af2f410c53b8adb2b66bb029bc6a56da8}{get\_\-like\_\-factor} (const unsigned int u\_\-spec\_\-id)
+\begin{DoxyCompactList}\small\item\em get the like factor of a liked specied \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_ab9716bf0081511ea866d49e173bd0554}{
+bool \hyperlink{structSpeciesInfo_ab9716bf0081511ea866d49e173bd0554}{operator$<$} (const \hyperlink{structSpeciesInfo}{SpeciesInfo} \&info)}
+\label{structSpeciesInfo_ab9716bf0081511ea866d49e173bd0554}
+
+\begin{DoxyCompactList}\small\item\em operator $<$ \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_aaf85b85e45a8a96031fef2ac27cdc84c}{
+bool \hyperlink{structSpeciesInfo_aaf85b85e45a8a96031fef2ac27cdc84c}{operator$>$} (const \hyperlink{structSpeciesInfo}{SpeciesInfo} \&info)}
+\label{structSpeciesInfo_aaf85b85e45a8a96031fef2ac27cdc84c}
+
+\begin{DoxyCompactList}\small\item\em operator $>$ \end{DoxyCompactList}\item 
+\hypertarget{structSpeciesInfo_a466ef9513c5df92ca5ab6a93ad553264}{
+unsigned int \& \hyperlink{structSpeciesInfo_a466ef9513c5df92ca5ab6a93ad553264}{total\_\-species\_\-number} ()}
+\label{structSpeciesInfo_a466ef9513c5df92ca5ab6a93ad553264}
+
+\begin{DoxyCompactList}\small\item\em set total\_\-species\_\-number \end{DoxyCompactList}\item 
+std::string \hyperlink{structSpeciesInfo_a51f083342422dbe73b4dca87de6a662b}{get\_\-info\_\-string} ()
+\begin{DoxyCompactList}\small\item\em get a string of all the data formatted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{structSpeciesInfo_a528e7f60fc35e38b4f6b12077b0237bc}{species\_\-id}
+\begin{DoxyCompactList}\small\item\em the numerical id of the species \end{DoxyCompactList}\item 
+std::string \hyperlink{structSpeciesInfo_a62ef1cee8c0611138084f8ae6e99a665}{species\_\-name}
+\begin{DoxyCompactList}\small\item\em the name of the species \end{DoxyCompactList}\item 
+unsigned int \hyperlink{structSpeciesInfo_a5582008c964055461a2cf00d4d727196}{life\_\-coast}
+\begin{DoxyCompactList}\small\item\em the coast of life \end{DoxyCompactList}\item 
+unsigned int \hyperlink{structSpeciesInfo_a197bc2a04a0dcfab7e7f48df80d73b1f}{health\_\-status}
+\begin{DoxyCompactList}\small\item\em health status determine when an animal feels good \end{DoxyCompactList}\item 
+unsigned int \hyperlink{structSpeciesInfo_a48f9d7283ac97e3658ba596eefa777ab}{calorie}
+\begin{DoxyCompactList}\small\item\em calorie the nutritive power of the form of life \end{DoxyCompactList}\item 
+float \hyperlink{structSpeciesInfo_afec7fed12e22abfef5032407e9042d98}{life\_\-space}
+\begin{DoxyCompactList}\small\item\em occuped space in a quadro \end{DoxyCompactList}\item 
+bool \hyperlink{structSpeciesInfo_a25738d8f07439886c95c5501c3b07259}{is\_\-animal}
+\begin{DoxyCompactList}\small\item\em true if is animal , false is vegetable \end{DoxyCompactList}\item 
+\hyperlink{structSpeciesInfo_aa70735bd441c2465b36bef55cfabb1bf}{likings\_\-map\_\-tp} \hyperlink{structSpeciesInfo_a109b3e5acaf126bb8df9648b6c925542}{likings}
+\begin{DoxyCompactList}\small\item\em the likings \end{DoxyCompactList}\item 
+\hyperlink{structSpeciesInfo_aab6fabec09f9eb5a26e680d1d6f9d037}{likings\_\-by\_\-lk\_\-factor\_\-tp} \hyperlink{structSpeciesInfo_aa9502c5929b33379cefa95ec0f2ba7d7}{likings\_\-by\_\-lk\_\-factor}
+\begin{DoxyCompactList}\small\item\em likings sorted by lk\_\-factor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structSpeciesInfo_a1ea4e2318d5f8195bf8a53bf3ade3830}{
+bool \hyperlink{structSpeciesInfo_a1ea4e2318d5f8195bf8a53bf3ade3830}{check\_\-likings} ()}
+\label{structSpeciesInfo_a1ea4e2318d5f8195bf8a53bf3ade3830}
+
+\begin{DoxyCompactList}\small\item\em check if the size of likings is = to m\_\-total\_\-species\_\-number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{structSpeciesInfo_a7b4393176e686a4c1b9e22a5e718744c}{m\_\-total\_\-species\_\-number}
+\begin{DoxyCompactList}\small\item\em total number of species present int the ecosystem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::istream \& \hyperlink{structSpeciesInfo_a1c3911af6003b03265b6fa64aa001d8a}{operator$>$$>$} (std::istream \&is, \hyperlink{structSpeciesInfo}{SpeciesInfo} \&info)
+\begin{DoxyCompactList}\small\item\em operator $>$$>$ \end{DoxyCompactList}\item 
+std::ostream \& \hyperlink{structSpeciesInfo_ab706957c8295cec747ca66b56fc1b4d7}{operator$<$$<$} (std::ostream \&os, const \hyperlink{structSpeciesInfo}{SpeciesInfo} \&info)
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+species info containers 
+
+this file only contains a struct layered inside the SpeciesAnalizer class.
+
+this struct contains data relatives to the characteristcs of a species. his centrall role is to give a unique reference for the features of a species. so that different animals of the same species must have the same id \begin{DoxySeeAlso}{See also}
+SpeciesAnalizer 
+\end{DoxySeeAlso}
+
+
+Definition at line 53 of file speciesinfo.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{structSpeciesInfo_aab6fabec09f9eb5a26e680d1d6f9d037}{
+\index{SpeciesInfo@{SpeciesInfo}!likings\_\-by\_\-lk\_\-factor\_\-tp@{likings\_\-by\_\-lk\_\-factor\_\-tp}}
+\index{likings\_\-by\_\-lk\_\-factor\_\-tp@{likings\_\-by\_\-lk\_\-factor\_\-tp}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{likings\_\-by\_\-lk\_\-factor\_\-tp}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::multiset$<$ {\bf Like} , {\bf LikeFactorCmp} $>$ {\bf SpeciesInfo::likings\_\-by\_\-lk\_\-factor\_\-tp}}}
+\label{structSpeciesInfo_aab6fabec09f9eb5a26e680d1d6f9d037}
+
+
+multimap sorted by like\_\-factor 
+
+key is the like\_\-factor and value is an iterator to the corresponding element in likings\_\-map 
+
+Definition at line 71 of file speciesinfo.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structSpeciesInfo_a51f083342422dbe73b4dca87de6a662b}{
+\index{SpeciesInfo@{SpeciesInfo}!get\_\-info\_\-string@{get\_\-info\_\-string}}
+\index{get\_\-info\_\-string@{get\_\-info\_\-string}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{get\_\-info\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}std::string SpeciesInfo::get\_\-info\_\-string (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{structSpeciesInfo_a51f083342422dbe73b4dca87de6a662b}
+
+
+get a string of all the data formatted 
+
+the string is composed as is parsed by \hyperlink{classSpeciesController_a67380eb665706237de2207d46125a82b}{SpeciesController::string\_\-parser} \begin{DoxySeeAlso}{See also}
+\hyperlink{classSpeciesController}{SpeciesController} 
+\end{DoxySeeAlso}
+
+
+Definition at line 298 of file speciesinfo.cpp.
+
+\hypertarget{structSpeciesInfo_af2f410c53b8adb2b66bb029bc6a56da8}{
+\index{SpeciesInfo@{SpeciesInfo}!get\_\-like\_\-factor@{get\_\-like\_\-factor}}
+\index{get\_\-like\_\-factor@{get\_\-like\_\-factor}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{get\_\-like\_\-factor}]{\setlength{\rightskip}{0pt plus 5cm}int SpeciesInfo::get\_\-like\_\-factor (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-spec\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{structSpeciesInfo_af2f410c53b8adb2b66bb029bc6a56da8}
+
+
+get the like factor of a liked specied 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-spec\_\-id} & the species id of the liked species \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 187 of file speciesinfo.cpp.
+
+\hypertarget{structSpeciesInfo_a5c1c1c98c4f8bf4ae0b85d3c3943fff5}{
+\index{SpeciesInfo@{SpeciesInfo}!insert\_\-like@{insert\_\-like}}
+\index{insert\_\-like@{insert\_\-like}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{insert\_\-like}]{\setlength{\rightskip}{0pt plus 5cm}bool SpeciesInfo::insert\_\-like (
+\begin{DoxyParamCaption}
+\item[{const int}]{u\_\-spec\_\-id, }
+\item[{const int}]{u\_\-like\_\-factor}
+\end{DoxyParamCaption}
+)}}
+\label{structSpeciesInfo_a5c1c1c98c4f8bf4ae0b85d3c3943fff5}
+
+
+create and insert a like whith passed parameter 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structLike}{Like} 
+\end{DoxySeeAlso}
+
+
+Definition at line 144 of file speciesinfo.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structSpeciesInfo_ab706957c8295cec747ca66b56fc1b4d7}{
+\index{SpeciesInfo@{SpeciesInfo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{os, }
+\item[{const {\bf SpeciesInfo} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{structSpeciesInfo_ab706957c8295cec747ca66b56fc1b4d7}
+
+
+operator $<$$<$ 
+
+prints al the information stored and the likes 
+
+Definition at line 237 of file speciesinfo.cpp.
+
+\hypertarget{structSpeciesInfo_a1c3911af6003b03265b6fa64aa001d8a}{
+\index{SpeciesInfo@{SpeciesInfo}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{is, }
+\item[{{\bf SpeciesInfo} \&}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{structSpeciesInfo_a1c3911af6003b03265b6fa64aa001d8a}
+
+
+operator $>$$>$ 
+
+DO NOT USE ME! 
+
+Definition at line 220 of file speciesinfo.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structSpeciesInfo_a48f9d7283ac97e3658ba596eefa777ab}{
+\index{SpeciesInfo@{SpeciesInfo}!calorie@{calorie}}
+\index{calorie@{calorie}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{calorie}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf SpeciesInfo::calorie}}}
+\label{structSpeciesInfo_a48f9d7283ac97e3658ba596eefa777ab}
+
+
+calorie the nutritive power of the form of life 
+
+\begin{DoxySeeAlso}{See also}
+Species::m\_\-calorie 
+\end{DoxySeeAlso}
+
+
+Definition at line 172 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a197bc2a04a0dcfab7e7f48df80d73b1f}{
+\index{SpeciesInfo@{SpeciesInfo}!health\_\-status@{health\_\-status}}
+\index{health\_\-status@{health\_\-status}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{health\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf SpeciesInfo::health\_\-status}}}
+\label{structSpeciesInfo_a197bc2a04a0dcfab7e7f48df80d73b1f}
+
+
+health status determine when an animal feels good 
+
+the health status has to be read as a percentage of the total hp reachable. over this percentage the form of life starts to feels good, so his libido rise in order to prefer the reproduction. no plant reproduction is included in this model! but for the future realises this data member in included in \hyperlink{classSpecied}{Specied} class 
+
+Definition at line 167 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a25738d8f07439886c95c5501c3b07259}{
+\index{SpeciesInfo@{SpeciesInfo}!is\_\-animal@{is\_\-animal}}
+\index{is\_\-animal@{is\_\-animal}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{is\_\-animal}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf SpeciesInfo::is\_\-animal}}}
+\label{structSpeciesInfo_a25738d8f07439886c95c5501c3b07259}
+
+
+true if is animal , false is vegetable 
+
+variable used only for a better understanding of the reader. 
+
+Definition at line 183 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a5582008c964055461a2cf00d4d727196}{
+\index{SpeciesInfo@{SpeciesInfo}!life\_\-coast@{life\_\-coast}}
+\index{life\_\-coast@{life\_\-coast}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{life\_\-coast}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf SpeciesInfo::life\_\-coast}}}
+\label{structSpeciesInfo_a5582008c964055461a2cf00d4d727196}
+
+
+the coast of life 
+
+every time a specied is called it had to pay a life coast. this life coast is sottraed from the m\_\-hp when the life() member is called \begin{DoxySeeAlso}{See also}
+live 
+\end{DoxySeeAlso}
+
+
+Definition at line 156 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_afec7fed12e22abfef5032407e9042d98}{
+\index{SpeciesInfo@{SpeciesInfo}!life\_\-space@{life\_\-space}}
+\index{life\_\-space@{life\_\-space}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{life\_\-space}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf SpeciesInfo::life\_\-space}}}
+\label{structSpeciesInfo_afec7fed12e22abfef5032407e9042d98}
+
+
+occuped space in a quadro 
+
+the space occuped in a quadro in percentage. 
+
+Definition at line 177 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a109b3e5acaf126bb8df9648b6c925542}{
+\index{SpeciesInfo@{SpeciesInfo}!likings@{likings}}
+\index{likings@{likings}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{likings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf likings\_\-map\_\-tp} {\bf SpeciesInfo::likings}}}
+\label{structSpeciesInfo_a109b3e5acaf126bb8df9648b6c925542}
+
+
+the likings 
+
+how much a species like others.
+
+the key is the spec\_\-id searched. and the sort is provided by \hyperlink{structLike_a0b36906c501104cbd13c0de9f02c2496}{Like::operator$<$} using the default set constructor
+
+the nature of the container ensures the inexistance of two egual species
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]scrivi delle considerazioni finali sul fatto che i multi\_\-index sono più comodi in questi casi anche per emulare una map isi isi \end{Desc}
+
+
+Definition at line 199 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_aa9502c5929b33379cefa95ec0f2ba7d7}{
+\index{SpeciesInfo@{SpeciesInfo}!likings\_\-by\_\-lk\_\-factor@{likings\_\-by\_\-lk\_\-factor}}
+\index{likings\_\-by\_\-lk\_\-factor@{likings\_\-by\_\-lk\_\-factor}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{likings\_\-by\_\-lk\_\-factor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf likings\_\-by\_\-lk\_\-factor\_\-tp} {\bf SpeciesInfo::likings\_\-by\_\-lk\_\-factor}}}
+\label{structSpeciesInfo_aa9502c5929b33379cefa95ec0f2ba7d7}
+
+
+likings sorted by lk\_\-factor 
+
+why i didn't use a smart\_\-ptr map? because i would have had to make the likings\_\-map\_\-tp made of boost smart pointers and then create this multimap. it was too late so i decided to make it composed of iterators instead of pointers, references or copies.
+
+so why you did not use a boost:multiindex container? bacause this project has a didactic scope so i want to get both the experiences in order to have an idea of good and evil of stl vs multiindex.
+
+if your last question is: \char`\"{}is it better to use multiindex in this 
+		situation? isn't it?\char`\"{}
+
+the answer is one and only : \char`\"{}YES!\char`\"{} 
+
+Definition at line 220 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a7b4393176e686a4c1b9e22a5e718744c}{
+\index{SpeciesInfo@{SpeciesInfo}!m\_\-total\_\-species\_\-number@{m\_\-total\_\-species\_\-number}}
+\index{m\_\-total\_\-species\_\-number@{m\_\-total\_\-species\_\-number}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{m\_\-total\_\-species\_\-number}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf SpeciesInfo::m\_\-total\_\-species\_\-number}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{structSpeciesInfo_a7b4393176e686a4c1b9e22a5e718744c}
+
+
+total number of species present int the ecosystem 
+
+this member is used to controll if the insertion has been completed 
+
+Definition at line 244 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a528e7f60fc35e38b4f6b12077b0237bc}{
+\index{SpeciesInfo@{SpeciesInfo}!species\_\-id@{species\_\-id}}
+\index{species\_\-id@{species\_\-id}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{species\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf SpeciesInfo::species\_\-id}}}
+\label{structSpeciesInfo_a528e7f60fc35e38b4f6b12077b0237bc}
+
+
+the numerical id of the species 
+
+this is the numerical id of the species and is used to identify the species in order to compute parameters and make statistics 
+
+Definition at line 138 of file speciesinfo.h.
+
+\hypertarget{structSpeciesInfo_a62ef1cee8c0611138084f8ae6e99a665}{
+\index{SpeciesInfo@{SpeciesInfo}!species\_\-name@{species\_\-name}}
+\index{species\_\-name@{species\_\-name}!SpeciesInfo@{SpeciesInfo}}
+\subsubsection[{species\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf SpeciesInfo::species\_\-name}}}
+\label{structSpeciesInfo_a62ef1cee8c0611138084f8ae6e99a665}
+
+
+the name of the species 
+
+the name of the species as it could be for a human. example: lion, bear, rabbit... this name is NOT used in any computational process, it's only for a better human understanding of the process
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structSpeciesInfo_a528e7f60fc35e38b4f6b12077b0237bc}{species\_\-id} 
+\end{DoxySeeAlso}
+
+
+Definition at line 148 of file speciesinfo.h.
+
+
+
+The documentation for this struct was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{speciesinfo_8h}{speciesinfo.h}\item 
+sources/speciesinfo.cpp\end{DoxyCompactItemize}

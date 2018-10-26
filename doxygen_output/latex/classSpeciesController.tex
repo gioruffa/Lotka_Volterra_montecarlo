@@ -1,0 +1,401 @@
+\hypertarget{classSpeciesController}{
+\section{SpeciesController Class Reference}
+\label{classSpeciesController}\index{SpeciesController@{SpeciesController}}
+}
+
+
+contain info about the species in the ecosystem  
+
+
+
+
+{\ttfamily \#include $<$speciescontroller.h$>$}
+
+Inheritance diagram for SpeciesController:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpeciesController}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$ \hyperlink{classSpeciesController_a4b2e6ab3bbcf3d53a4588967eb615ff7}{infos\_\-tp}
+\begin{DoxyCompactList}\small\item\em the type of the infos map \end{DoxyCompactList}\item 
+typedef std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$::iterator \hyperlink{classSpeciesController_a4026e8acb68f2b04ecc13bb20c68008a}{infos\_\-it}
+\begin{DoxyCompactList}\small\item\em info iterator \end{DoxyCompactList}\item 
+typedef std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$::const\_\-iterator \hyperlink{classSpeciesController_a0dc92662511aca888d67516eb87b6260}{infos\_\-const\_\-it}
+\begin{DoxyCompactList}\small\item\em info const\_\-iterator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpeciesController_a5af2abb109a098e7f6b2d16823d16458}{SpeciesController} (unsigned int u\_\-species\_\-number=0)
+\begin{DoxyCompactList}\small\item\em default contructor \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_a0a6d3bdb642f21c63a619087ac38e073}{
+\hyperlink{classSpeciesController_a0a6d3bdb642f21c63a619087ac38e073}{$\sim$SpeciesController} ()}
+\label{classSpeciesController_a0a6d3bdb642f21c63a619087ac38e073}
+
+\begin{DoxyCompactList}\small\item\em default destrictor \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSpeciesController_a82ca8bb4c8f99e8b1151990ef293e39a}{check} ()
+\begin{DoxyCompactList}\small\item\em check if the controll is completed \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_ae12020f4f91bc487e447fe6225bc138d}{
+std::pair$<$ \hyperlink{classSpeciesController_a4026e8acb68f2b04ecc13bb20c68008a}{infos\_\-it}, bool $>$ \hyperlink{classSpeciesController_ae12020f4f91bc487e447fe6225bc138d}{insert} (const \hyperlink{structSpeciesInfo}{SpeciesInfo} \&spi)}
+\label{classSpeciesController_ae12020f4f91bc487e447fe6225bc138d}
+
+\begin{DoxyCompactList}\small\item\em insert a species info \end{DoxyCompactList}\item 
+\hyperlink{classSpeciesController_a0dc92662511aca888d67516eb87b6260}{infos\_\-const\_\-it} \hyperlink{classSpeciesController_a1d9d5598574e4dc9c7023440a7a0245b}{get\_\-info} (const unsigned int u\_\-spec\_\-id)
+\begin{DoxyCompactList}\small\item\em get infos about a species \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_aabe704fcc426ad3ec1ae46d0ed7e667d}{
+const \hyperlink{structSpeciesInfo}{SpeciesInfo} \& \hyperlink{classSpeciesController_aabe704fcc426ad3ec1ae46d0ed7e667d}{get\_\-info\_\-ref} (const unsigned int u\_\-spec\_\-id) const }
+\label{classSpeciesController_aabe704fcc426ad3ec1ae46d0ed7e667d}
+
+\begin{DoxyCompactList}\small\item\em get the reference to the species info whith u\_\-spec\_\-id as species\_\-id \end{DoxyCompactList}\item 
+int \hyperlink{classSpeciesController_a467ef1497b83bb2ae5f0990cab611c34}{get\_\-like\_\-factor} (const unsigned int predator\_\-spec\_\-id, const unsigned int prey\_\-spec\_\-id)
+\begin{DoxyCompactList}\small\item\em get like\_\-factor \end{DoxyCompactList}\item 
+const std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$ \& \hyperlink{classSpeciesController_ae3173c4b361dcbe2e8efb0c0f6e80486}{get\_\-infos} () const 
+\begin{DoxyCompactList}\small\item\em get the species infos \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_af22a0989362a058602cc7e039ce0182f}{
+std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$ \& \hyperlink{classSpeciesController_af22a0989362a058602cc7e039ce0182f}{get\_\-infos} ()}
+\label{classSpeciesController_af22a0989362a058602cc7e039ce0182f}
+
+\begin{DoxyCompactList}\small\item\em get the infos \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_abd757b3bd462b28307a93e3fe1857832}{
+unsigned int \hyperlink{classSpeciesController_abd757b3bd462b28307a93e3fe1857832}{species\_\-number} ()}
+\label{classSpeciesController_abd757b3bd462b28307a93e3fe1857832}
+
+\begin{DoxyCompactList}\small\item\em get the total species number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classSpeciesController_a67380eb665706237de2207d46125a82b}{string\_\-parser} (const std::string \&str, \hyperlink{structSpeciesInfo}{SpeciesInfo} \&spi)
+\begin{DoxyCompactList}\small\item\em string parser \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSpeciesController_aeff7a0500fcf53ad83f4d175adaef85d}{
+unsigned int \hyperlink{classSpeciesController_aeff7a0500fcf53ad83f4d175adaef85d}{m\_\-species\_\-number}}
+\label{classSpeciesController_aeff7a0500fcf53ad83f4d175adaef85d}
+
+\begin{DoxyCompactList}\small\item\em total number of species in the ecosystem \end{DoxyCompactList}\item 
+std::map$<$ unsigned int, \hyperlink{structSpeciesInfo}{SpeciesInfo} $>$ \hyperlink{classSpeciesController_a4e439ccd41d6143680b7a89bd985c8ad}{m\_\-infos}
+\begin{DoxyCompactList}\small\item\em container of species info \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ifstream \& \hyperlink{classSpeciesController_aeb4b1409fd5367b5925f1552ee935aa8}{operator$>$$>$} (std::ifstream \&is, \hyperlink{classSpeciesController}{SpeciesController} \&sa)
+\begin{DoxyCompactList}\small\item\em operator $>$$>$ \end{DoxyCompactList}\item 
+std::istream \& \hyperlink{classSpeciesController_a26bec2c9a56999b0e717d0b225fbc942}{operator$>$$>$} (std::istream \&is, \hyperlink{classSpeciesController}{SpeciesController} \&sa)
+\begin{DoxyCompactList}\small\item\em operator $>$$>$ \end{DoxyCompactList}\item 
+\hypertarget{classSpeciesController_abb0fb135115ac68cbc84f562a861d81b}{
+std::ostream \& \hyperlink{classSpeciesController_abb0fb135115ac68cbc84f562a861d81b}{operator$<$$<$} (std::ostream \&is, const \hyperlink{classSpeciesController}{SpeciesController} \&sa)}
+\label{classSpeciesController_abb0fb135115ac68cbc84f562a861d81b}
+
+\begin{DoxyCompactList}\small\item\em operator $<$$<$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contain info about the species in the ecosystem 
+
+this class contains all the information about the species present in the ecosystem. this class is the UNIQUE reference for the features of a species. this is class inside the ecosystem to provide the values relative the species. in this way al the form of life in the ecosystem of the same species have the same value for dm relative to the species.
+
+this class is also used to determine how much species like each others. for like we intend \char`\"{}to prefer for dinner\char`\"{}.
+
+particular attention was given to the affidability and to the rightness of the data field inserted. controll statement preservers from multiple insertions of lines and wrong likes. the computational coast is hight but this element has to be build rightly and only one time for ecosystem so is a good fee to pay. 
+
+Definition at line 61 of file speciescontroller.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classSpeciesController_a0dc92662511aca888d67516eb87b6260}{
+\index{SpeciesController@{SpeciesController}!infos\_\-const\_\-it@{infos\_\-const\_\-it}}
+\index{infos\_\-const\_\-it@{infos\_\-const\_\-it}!SpeciesController@{SpeciesController}}
+\subsubsection[{infos\_\-const\_\-it}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::map$<$unsigned int, {\bf SpeciesInfo}$>$::const\_\-iterator {\bf SpeciesController::infos\_\-const\_\-it}}}
+\label{classSpeciesController_a0dc92662511aca888d67516eb87b6260}
+
+
+info const\_\-iterator 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classSpeciesController_a4e439ccd41d6143680b7a89bd985c8ad}{m\_\-infos} 
+\end{DoxySeeAlso}
+
+
+Definition at line 81 of file speciescontroller.h.
+
+\hypertarget{classSpeciesController_a4026e8acb68f2b04ecc13bb20c68008a}{
+\index{SpeciesController@{SpeciesController}!infos\_\-it@{infos\_\-it}}
+\index{infos\_\-it@{infos\_\-it}!SpeciesController@{SpeciesController}}
+\subsubsection[{infos\_\-it}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::map$<$unsigned int, {\bf SpeciesInfo}$>$::iterator {\bf SpeciesController::infos\_\-it}}}
+\label{classSpeciesController_a4026e8acb68f2b04ecc13bb20c68008a}
+
+
+info iterator 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classSpeciesController_a4e439ccd41d6143680b7a89bd985c8ad}{m\_\-infos} 
+\end{DoxySeeAlso}
+
+
+Definition at line 75 of file speciescontroller.h.
+
+\hypertarget{classSpeciesController_a4b2e6ab3bbcf3d53a4588967eb615ff7}{
+\index{SpeciesController@{SpeciesController}!infos\_\-tp@{infos\_\-tp}}
+\index{infos\_\-tp@{infos\_\-tp}!SpeciesController@{SpeciesController}}
+\subsubsection[{infos\_\-tp}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::map$<$unsigned int, {\bf SpeciesInfo}$>$ {\bf SpeciesController::infos\_\-tp}}}
+\label{classSpeciesController_a4b2e6ab3bbcf3d53a4588967eb615ff7}
+
+
+the type of the infos map 
+
+typedef std::map$<$unsigned int, SpeciesInfo$>$ 
+
+Definition at line 69 of file speciescontroller.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpeciesController_a5af2abb109a098e7f6b2d16823d16458}{
+\index{SpeciesController@{SpeciesController}!SpeciesController@{SpeciesController}}
+\index{SpeciesController@{SpeciesController}!SpeciesController@{SpeciesController}}
+\subsubsection[{SpeciesController}]{\setlength{\rightskip}{0pt plus 5cm}SpecCon::SpeciesController (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{u\_\-species\_\-number = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classSpeciesController_a5af2abb109a098e7f6b2d16823d16458}
+
+
+default contructor 
+
+if no u\_\-species\_\-number is passed will set to 0 and \hyperlink{classSpeciesController_a82ca8bb4c8f99e8b1151990ef293e39a}{check()} will fail 
+
+Definition at line 40 of file speciescontroller.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpeciesController_a82ca8bb4c8f99e8b1151990ef293e39a}{
+\index{SpeciesController@{SpeciesController}!check@{check}}
+\index{check@{check}!SpeciesController@{SpeciesController}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}bool SpecCon::check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSpeciesController_a82ca8bb4c8f99e8b1151990ef293e39a}
+
+
+check if the controll is completed 
+
+\begin{DoxyReturn}{Returns}
+true only if those condition are simultaneus:
+\begin{DoxyItemize}
+\item total species number is not 0
+\item the number of SpeciesInfos coincide with the number of species in ecosystem
+\item every \hyperlink{structSpeciesInfo}{SpeciesInfo} returns true if is\_\-full() is called 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structSpeciesInfo_a3d012834e84c8d878436a739f141f154}{SpeciesInfo::is\_\-full()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classController_abcf0d0905edc35ee09dc761bd2878d6a}{Controller}.
+
+
+
+Definition at line 49 of file speciescontroller.cpp.
+
+\hypertarget{classSpeciesController_a1d9d5598574e4dc9c7023440a7a0245b}{
+\index{SpeciesController@{SpeciesController}!get\_\-info@{get\_\-info}}
+\index{get\_\-info@{get\_\-info}!SpeciesController@{SpeciesController}}
+\subsubsection[{get\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SpecCon::infos\_\-const\_\-it} SpecCon::get\_\-info (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-spec\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classSpeciesController_a1d9d5598574e4dc9c7023440a7a0245b}
+
+
+get infos about a species 
+
+\begin{DoxyReturn}{Returns}
+a const iterator to a pair which the second member is the \hyperlink{structSpeciesInfo}{SpeciesInfo}. if the species does not exists returns an iterator to m\_\-infos.end(); 
+\end{DoxyReturn}
+
+
+Definition at line 178 of file speciescontroller.cpp.
+
+\hypertarget{classSpeciesController_ae3173c4b361dcbe2e8efb0c0f6e80486}{
+\index{SpeciesController@{SpeciesController}!get\_\-infos@{get\_\-infos}}
+\index{get\_\-infos@{get\_\-infos}!SpeciesController@{SpeciesController}}
+\subsubsection[{get\_\-infos}]{\setlength{\rightskip}{0pt plus 5cm}const std::map$<$ unsigned int, {\bf SpeciesInfo} $>$ \& SpecCon::get\_\-infos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classSpeciesController_ae3173c4b361dcbe2e8efb0c0f6e80486}
+
+
+get the species infos 
+
+\begin{DoxyReturn}{Returns}
+a const reference to species infos container, which is a map; 
+\end{DoxyReturn}
+
+
+Definition at line 225 of file speciescontroller.cpp.
+
+\hypertarget{classSpeciesController_a467ef1497b83bb2ae5f0990cab611c34}{
+\index{SpeciesController@{SpeciesController}!get\_\-like\_\-factor@{get\_\-like\_\-factor}}
+\index{get\_\-like\_\-factor@{get\_\-like\_\-factor}!SpeciesController@{SpeciesController}}
+\subsubsection[{get\_\-like\_\-factor}]{\setlength{\rightskip}{0pt plus 5cm}int SpecCon::get\_\-like\_\-factor (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{predator\_\-spec\_\-id, }
+\item[{const unsigned int}]{prey\_\-spec\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classSpeciesController_a467ef1497b83bb2ae5f0990cab611c34}
+
+
+get like\_\-factor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em predator\_\-spec\_\-id} & the species id of the Species which wants to eat. \\
+\hline
+{\em prey\_\-spec\_\-id} & the species id that will be eaten \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the like factor. how much the predator like the prey
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structLike_aa10b4912394904201f7c75c4e9868a0f}{Like::like\_\-factor} 
+\end{DoxySeeAlso}
+
+
+Definition at line 202 of file speciescontroller.cpp.
+
+\hypertarget{classSpeciesController_a67380eb665706237de2207d46125a82b}{
+\index{SpeciesController@{SpeciesController}!string\_\-parser@{string\_\-parser}}
+\index{string\_\-parser@{string\_\-parser}!SpeciesController@{SpeciesController}}
+\subsubsection[{string\_\-parser}]{\setlength{\rightskip}{0pt plus 5cm}bool SpecCon::string\_\-parser (
+\begin{DoxyParamCaption}
+\item[{const std::string \&}]{str, }
+\item[{{\bf SpeciesInfo} \&}]{spi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classSpeciesController_a67380eb665706237de2207d46125a82b}
+
+
+string parser 
+
+parse an input line and put's the input in the spi field
+
+Input Format: the line passed contains numerous info divided by a \char`\"{}$|$\char`\"{} here's the order of the fields: (note that we are in C++ so the first element has position 0)
+
+
+\begin{DoxyItemize}
+\item species\_\-id (0 is not valid)
+\item species\_\-name
+\item \char`\"{}vegetable\char`\"{} or \char`\"{}animal\char`\"{}
+\item life\_\-coast
+\item health\_\-status
+\item calories
+\item life\_\-space
+\end{DoxyItemize}
+
+after 6 tokens have to insert the \hyperlink{structLike}{Like} of the species in the format: liked\_\-species-\/like\_\-factor. pay attention to the \char`\"{}-\/\char`\"{}. as usual every \hyperlink{structLike}{Like} has to be separated by \char`\"{}$|$\char`\"{}. return m\_\-infos; if the numbers of Likes is not = to the total species number in the ecosystem -\/ 1 . the function will return false;
+
+example: if we have 3 species in the ecosystem (1 is lion, 2 is gazzella , 3 is grass):
+
+\char`\"{}1$|$lion$|$animal$|$10$|$50$|$1$|$45$|$2-\/50$|$3-\/0\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string containing the data \\
+\hline
+{\em spi} & \hyperlink{structSpeciesInfo}{SpeciesInfo} in which put data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the string were well done, false if the string wasn't formatted correctly 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+operator$>$$>$ 
+\end{DoxySeeAlso}
+
+
+Definition at line 235 of file speciescontroller.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classSpeciesController_aeb4b1409fd5367b5925f1552ee935aa8}{
+\index{SpeciesController@{SpeciesController}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SpeciesController@{SpeciesController}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::ifstream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::ifstream \&}]{is, }
+\item[{{\bf SpeciesController} \&}]{sa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classSpeciesController_aeb4b1409fd5367b5925f1552ee935aa8}
+
+
+operator $>$$>$ 
+
+load all \hyperlink{structSpeciesInfo}{SpeciesInfo} for all species. take the first line of the stream and passes it a string\_\-parser. to be used whith filestream \begin{DoxySeeAlso}{See also}
+\hyperlink{classSpeciesController_a67380eb665706237de2207d46125a82b}{string\_\-parser} for the data format; 
+\end{DoxySeeAlso}
+
+
+Definition at line 571 of file speciescontroller.cpp.
+
+\hypertarget{classSpeciesController_a26bec2c9a56999b0e717d0b225fbc942}{
+\index{SpeciesController@{SpeciesController}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!SpeciesController@{SpeciesController}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{is, }
+\item[{{\bf SpeciesController} \&}]{sa}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classSpeciesController_a26bec2c9a56999b0e717d0b225fbc942}
+
+
+operator $>$$>$ 
+
+load all \hyperlink{structSpeciesInfo}{SpeciesInfo} for all species. to be used whith std::cin, ask for the fields an compose a line to pass to line\_\-parser then if the line is well composed insert the \hyperlink{structSpeciesInfo}{SpeciesInfo} 
+
+Definition at line 654 of file speciescontroller.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpeciesController_a4e439ccd41d6143680b7a89bd985c8ad}{
+\index{SpeciesController@{SpeciesController}!m\_\-infos@{m\_\-infos}}
+\index{m\_\-infos@{m\_\-infos}!SpeciesController@{SpeciesController}}
+\subsubsection[{m\_\-infos}]{\setlength{\rightskip}{0pt plus 5cm}std::map$<$unsigned int, {\bf SpeciesInfo}$>$ {\bf SpeciesController::m\_\-infos}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classSpeciesController_a4e439ccd41d6143680b7a89bd985c8ad}
+
+
+container of species info 
+
+species infos were sorted by spec\_\-id \begin{DoxySeeAlso}{See also}
+\hyperlink{structSpeciesInfo}{SpeciesInfo} 
+
+\hyperlink{structSpeciesInfo_ab9716bf0081511ea866d49e173bd0554}{SpeciesInfo::operator$<$} 
+\end{DoxySeeAlso}
+
+
+Definition at line 214 of file speciescontroller.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{speciescontroller_8h}{speciescontroller.h}\item 
+sources/speciescontroller.cpp\end{DoxyCompactItemize}

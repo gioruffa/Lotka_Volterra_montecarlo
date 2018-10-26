@@ -1,0 +1,237 @@
+\hypertarget{classGender}{
+\section{Gender Class Reference}
+\label{classGender}\index{Gender@{Gender}}
+}
+
+
+the gender of the form of life  
+
+
+
+
+{\ttfamily \#include $<$gender.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGender_a90e371a0a09819d60c2452238988262f}{Gender} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classGender_a359546875d33cef5599e85e58c15d8e0}{Gender} (std::string r\_\-gender)
+\begin{DoxyCompactList}\small\item\em constructor using a string \end{DoxyCompactList}\item 
+\hypertarget{classGender_a7ad7a7514711926743c9117dcbdefe04}{
+\hyperlink{classGender_a7ad7a7514711926743c9117dcbdefe04}{$\sim$Gender} ()}
+\label{classGender_a7ad7a7514711926743c9117dcbdefe04}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+\hypertarget{classGender_ac2ea0b219f63dddd3c8ec4511d942e38}{
+bool \hyperlink{classGender_ac2ea0b219f63dddd3c8ec4511d942e38}{is\_\-male} ()}
+\label{classGender_ac2ea0b219f63dddd3c8ec4511d942e38}
+
+\begin{DoxyCompactList}\small\item\em returns true if it is male \end{DoxyCompactList}\item 
+\hypertarget{classGender_a7618eefc206851181be4ac406482189e}{
+bool \hyperlink{classGender_a7618eefc206851181be4ac406482189e}{is\_\-female} ()}
+\label{classGender_a7618eefc206851181be4ac406482189e}
+
+\begin{DoxyCompactList}\small\item\em returns true if it is female \end{DoxyCompactList}\item 
+\hypertarget{classGender_a5be5137cbbe3177d3934b78f23c19e87}{
+bool \hyperlink{classGender_a5be5137cbbe3177d3934b78f23c19e87}{is\_\-hermaphrodite} ()}
+\label{classGender_a5be5137cbbe3177d3934b78f23c19e87}
+
+\begin{DoxyCompactList}\small\item\em returns true if it is hermaphrodite \end{DoxyCompactList}\item 
+\hypertarget{classGender_ad1e9c77e0075959e59995ae5f0587695}{
+bool \hyperlink{classGender_ad1e9c77e0075959e59995ae5f0587695}{is\_\-asexual} ()}
+\label{classGender_ad1e9c77e0075959e59995ae5f0587695}
+
+\begin{DoxyCompactList}\small\item\em returns true if it is asexual \end{DoxyCompactList}\item 
+\hypertarget{classGender_a454a9f9b3605d4df6ad3125fbcb78dd2}{
+const std::string \& \hyperlink{classGender_a454a9f9b3605d4df6ad3125fbcb78dd2}{gender} () const }
+\label{classGender_a454a9f9b3605d4df6ad3125fbcb78dd2}
+
+\begin{DoxyCompactList}\small\item\em get gender name \end{DoxyCompactList}\item 
+void \hyperlink{classGender_a931859ed381f2adb1a5aa54f163db24c}{change\_\-gender} (std::string r\_\-gender)
+\begin{DoxyCompactList}\small\item\em change the sex \end{DoxyCompactList}\item 
+void \hyperlink{classGender_a74e44c24c4c8748aa9aa2a884a03e2a3}{change\_\-gender} (const unsigned int u\_\-gender\_\-num=4)
+\begin{DoxyCompactList}\small\item\em change the sex \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classGender_ab1e46219176ba4a6b63fa3e0ce45d3b7}{numerical\_\-gender} () const 
+\begin{DoxyCompactList}\small\item\em numerical gender \end{DoxyCompactList}\item 
+\hypertarget{classGender_a9c20ed5c2c47837c2fce7686d42e0325}{
+bool \hyperlink{classGender_a9c20ed5c2c47837c2fce7686d42e0325}{operator$<$} (const \hyperlink{classGender}{Gender} \&gen) const }
+\label{classGender_a9c20ed5c2c47837c2fce7686d42e0325}
+
+\begin{DoxyCompactList}\small\item\em operator $<$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGender_a57094c4220de22c3f5d2f0876a28695a}{
+bool \hyperlink{classGender_a57094c4220de22c3f5d2f0876a28695a}{male\_\-}}
+\label{classGender_a57094c4220de22c3f5d2f0876a28695a}
+
+\begin{DoxyCompactList}\small\item\em if true is a male \end{DoxyCompactList}\item 
+\hypertarget{classGender_a1f13af5f143d7a202fcf1e406595071f}{
+bool \hyperlink{classGender_a1f13af5f143d7a202fcf1e406595071f}{female\_\-}}
+\label{classGender_a1f13af5f143d7a202fcf1e406595071f}
+
+\begin{DoxyCompactList}\small\item\em if true is a female \end{DoxyCompactList}\item 
+\hypertarget{classGender_a9c64708993b555550d8effa0f5da74c1}{
+std::string \hyperlink{classGender_a9c64708993b555550d8effa0f5da74c1}{gender\_\-name\_\-}}
+\label{classGender_a9c64708993b555550d8effa0f5da74c1}
+
+\begin{DoxyCompactList}\small\item\em name of the gender \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{classGender_a880decf4751cb0cf4d7b30cfa096a758}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classGender}{Gender} \&gen)
+\begin{DoxyCompactList}\small\item\em ostream operator of gender \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+the gender of the form of life 
+
+the possible gender of a form of life where: male , female, ermaphrodite, asexual;
+
+this is decided by the values of male\_\- and female\_\-;
+
+the ermaphrodite is male and female at the same time, the asexual is nor male nor female.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classGender_a57094c4220de22c3f5d2f0876a28695a}{male\_\-} 
+
+\hyperlink{classGender_a1f13af5f143d7a202fcf1e406595071f}{female\_\-} 
+\end{DoxySeeAlso}
+
+
+Definition at line 48 of file gender.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGender_a90e371a0a09819d60c2452238988262f}{
+\index{Gender@{Gender}!Gender@{Gender}}
+\index{Gender@{Gender}!Gender@{Gender}}
+\subsubsection[{Gender}]{\setlength{\rightskip}{0pt plus 5cm}Gender::Gender (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classGender_a90e371a0a09819d60c2452238988262f}
+
+
+default constructor 
+
+if no argument were given the form of life is considered asexual 
+
+Definition at line 32 of file gender.cpp.
+
+\hypertarget{classGender_a359546875d33cef5599e85e58c15d8e0}{
+\index{Gender@{Gender}!Gender@{Gender}}
+\index{Gender@{Gender}!Gender@{Gender}}
+\subsubsection[{Gender}]{\setlength{\rightskip}{0pt plus 5cm}Gender::Gender (
+\begin{DoxyParamCaption}
+\item[{std::string}]{r\_\-gender}
+\end{DoxyParamCaption}
+)}}
+\label{classGender_a359546875d33cef5599e85e58c15d8e0}
+
+
+constructor using a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r\_\-gender} & is the string containing the gender specification given in runtime. possible values are: \char`\"{}male\char`\"{} , \char`\"{}female\char`\"{} , \char`\"{}ermaphrodite\char`\"{} , \char`\"{}asexual\char`\"{};\\
+\hline
+\end{DoxyParams}
+if the gender is speciefied badly the gender is set to asexual; 
+
+Definition at line 42 of file gender.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classGender_a931859ed381f2adb1a5aa54f163db24c}{
+\index{Gender@{Gender}!change\_\-gender@{change\_\-gender}}
+\index{change\_\-gender@{change\_\-gender}!Gender@{Gender}}
+\subsubsection[{change\_\-gender}]{\setlength{\rightskip}{0pt plus 5cm}void Gender::change\_\-gender (
+\begin{DoxyParamCaption}
+\item[{std::string}]{r\_\-gender}
+\end{DoxyParamCaption}
+)}}
+\label{classGender_a931859ed381f2adb1a5aa54f163db24c}
+
+
+change the sex 
+
+need a string like the constructos 
+\begin{DoxyParams}{Parameters}
+{\em r\_\-gender} & see \hyperlink{classGender_a90e371a0a09819d60c2452238988262f}{Gender()} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file gender.cpp.
+
+\hypertarget{classGender_a74e44c24c4c8748aa9aa2a884a03e2a3}{
+\index{Gender@{Gender}!change\_\-gender@{change\_\-gender}}
+\index{change\_\-gender@{change\_\-gender}!Gender@{Gender}}
+\subsubsection[{change\_\-gender}]{\setlength{\rightskip}{0pt plus 5cm}void Gender::change\_\-gender (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-gender\_\-num = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)}}
+\label{classGender_a74e44c24c4c8748aa9aa2a884a03e2a3}
+
+
+change the sex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-gender\_\-num} & see numerical\_\-gender \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file gender.cpp.
+
+\hypertarget{classGender_ab1e46219176ba4a6b63fa3e0ce45d3b7}{
+\index{Gender@{Gender}!numerical\_\-gender@{numerical\_\-gender}}
+\index{numerical\_\-gender@{numerical\_\-gender}!Gender@{Gender}}
+\subsubsection[{numerical\_\-gender}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Gender::numerical\_\-gender (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classGender_ab1e46219176ba4a6b63fa3e0ce45d3b7}
+
+
+numerical gender 
+
+return a numerical id (int) which rappresent the gender. 1 is male, 2 is female, 3 is hermaphrodite and 4 is asexual; 
+
+Definition at line 195 of file gender.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classGender_a880decf4751cb0cf4d7b30cfa096a758}{
+\index{Gender@{Gender}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Gender@{Gender}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{os, }
+\item[{const {\bf Gender} \&}]{gen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classGender_a880decf4751cb0cf4d7b30cfa096a758}
+
+
+ostream operator of gender 
+
+prints a string saying the actual gender is a wrapper of \hyperlink{classGender_a454a9f9b3605d4df6ad3125fbcb78dd2}{Gender::gender()} 
+
+Definition at line 213 of file gender.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{gender_8h}{gender.h}\item 
+sources/\hyperlink{gender_8cpp}{gender.cpp}\end{DoxyCompactItemize}

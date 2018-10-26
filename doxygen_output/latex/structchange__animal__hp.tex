@@ -1,0 +1,48 @@
+\hypertarget{structchange__animal__hp}{
+\section{change\_\-animal\_\-hp Struct Reference}
+\label{structchange__animal__hp}\index{change\_\-animal\_\-hp@{change\_\-animal\_\-hp}}
+}
+
+
+functor to change \hyperlink{classIndividualAnimal}{IndividualAnimal} hp  
+
+
+
+
+{\ttfamily \#include $<$fieldchangers.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structchange__animal__hp_a62c8ac720a8a79c9b07d2b360df7be2d}{
+\hyperlink{structchange__animal__hp_a62c8ac720a8a79c9b07d2b360df7be2d}{change\_\-animal\_\-hp} (int \&nw\_\-hp)}
+\label{structchange__animal__hp_a62c8ac720a8a79c9b07d2b360df7be2d}
+
+\begin{DoxyCompactList}\small\item\em constructor setting new hp value \end{DoxyCompactList}\item 
+\hypertarget{structchange__animal__hp_a1ee9b6cc693ae673b687e7b81e1cdc83}{
+void \hyperlink{structchange__animal__hp_a1ee9b6cc693ae673b687e7b81e1cdc83}{operator()} (\hyperlink{classIndividualAnimal}{IndividualAnimal} \&an)}
+\label{structchange__animal__hp_a1ee9b6cc693ae673b687e7b81e1cdc83}
+
+\begin{DoxyCompactList}\small\item\em change the value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structchange__animal__hp_a1a7e86389e8afd8624fdb0a49aabd42c}{
+int \hyperlink{structchange__animal__hp_a1a7e86389e8afd8624fdb0a49aabd42c}{m\_\-nw\_\-hp}}
+\label{structchange__animal__hp_a1a7e86389e8afd8624fdb0a49aabd42c}
+
+\begin{DoxyCompactList}\small\item\em new hp value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+functor to change \hyperlink{classIndividualAnimal}{IndividualAnimal} hp 
+
+this version controll if the hp passed are negative. if so set it to 0 if they'r more than 100 set it to 0 because of uncorrect usage of unsigned int 
+
+Definition at line 68 of file fieldchangers.hpp.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{fieldchangers_8hpp}{fieldchangers.hpp}\end{DoxyCompactItemize}

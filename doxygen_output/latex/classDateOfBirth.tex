@@ -1,0 +1,142 @@
+\hypertarget{classDateOfBirth}{
+\section{DateOfBirth Class Reference}
+\label{classDateOfBirth}\index{DateOfBirth@{DateOfBirth}}
+}
+
+
+simple class for the date of birh  
+
+
+
+
+{\ttfamily \#include $<$time.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDateOfBirth_a2b781b44d207a48f9a17066a54c33bd1}{DateOfBirth} (long int u\_\-abs=0, double u\_\-rel=0)
+\begin{DoxyCompactList}\small\item\em default creator \end{DoxyCompactList}\item 
+\hyperlink{classDateOfBirth_a858604e5921287e5cb35dcadbff2689c}{DateOfBirth} (const \hyperlink{classClock}{Clock} \&u\_\-clock)
+\begin{DoxyCompactList}\small\item\em creator whith a clock \end{DoxyCompactList}\item 
+\hypertarget{classDateOfBirth_a9da1d12a3ef90a918bdea5a077e47f89}{
+\hyperlink{classDateOfBirth_a9da1d12a3ef90a918bdea5a077e47f89}{$\sim$DateOfBirth} ()}
+\label{classDateOfBirth_a9da1d12a3ef90a918bdea5a077e47f89}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+\hypertarget{classDateOfBirth_a4abde2ade51debf11060f515c157b658}{
+const long int \& \hyperlink{classDateOfBirth_a4abde2ade51debf11060f515c157b658}{abs} () const }
+\label{classDateOfBirth_a4abde2ade51debf11060f515c157b658}
+
+\begin{DoxyCompactList}\small\item\em get abs \end{DoxyCompactList}\item 
+\hypertarget{classDateOfBirth_a15399ab56a0b32b64d4b4ead601ba657}{
+long int \& \hyperlink{classDateOfBirth_a15399ab56a0b32b64d4b4ead601ba657}{abs} ()}
+\label{classDateOfBirth_a15399ab56a0b32b64d4b4ead601ba657}
+
+\begin{DoxyCompactList}\small\item\em set abs \end{DoxyCompactList}\item 
+\hypertarget{classDateOfBirth_a00324f71b547eb938030effcb5249eb7}{
+const double \& \hyperlink{classDateOfBirth_a00324f71b547eb938030effcb5249eb7}{rel} () const }
+\label{classDateOfBirth_a00324f71b547eb938030effcb5249eb7}
+
+\begin{DoxyCompactList}\small\item\em get rel \end{DoxyCompactList}\item 
+\hypertarget{classDateOfBirth_a3e050eecd8749371d3d8c21d76f146dd}{
+double \& \hyperlink{classDateOfBirth_a3e050eecd8749371d3d8c21d76f146dd}{rel} ()}
+\label{classDateOfBirth_a3e050eecd8749371d3d8c21d76f146dd}
+
+\begin{DoxyCompactList}\small\item\em set rel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long int \hyperlink{classDateOfBirth_a3f2be0fbfb187a421301d50c768784ba}{m\_\-absolute}
+\begin{DoxyCompactList}\small\item\em absolute date of birth \end{DoxyCompactList}\item 
+double \hyperlink{classDateOfBirth_a4e0f255eaf334e4e35a49aceee5df28d}{m\_\-relative}
+\begin{DoxyCompactList}\small\item\em relative date of birth \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDateOfBirth_abc2fd3b2388c85ad5f2399f4f250df3a}{
+std::ostream \& \hyperlink{classDateOfBirth_abc2fd3b2388c85ad5f2399f4f250df3a}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classDateOfBirth}{DateOfBirth} \&date)}
+\label{classDateOfBirth_abc2fd3b2388c85ad5f2399f4f250df3a}
+
+\begin{DoxyCompactList}\small\item\em stream to print the \hyperlink{classDateOfBirth}{DateOfBirth} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+simple class for the date of birh 
+
+this class is a simple wrapper that contain the information relatives to the date of life of the form of life. it contains the relative and the absolute date of birth 
+
+Definition at line 122 of file time.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDateOfBirth_a2b781b44d207a48f9a17066a54c33bd1}{
+\index{DateOfBirth@{DateOfBirth}!DateOfBirth@{DateOfBirth}}
+\index{DateOfBirth@{DateOfBirth}!DateOfBirth@{DateOfBirth}}
+\subsubsection[{DateOfBirth}]{\setlength{\rightskip}{0pt plus 5cm}DateOfBirth::DateOfBirth (
+\begin{DoxyParamCaption}
+\item[{long int}]{u\_\-abs = {\ttfamily 0}, }
+\item[{double}]{u\_\-rel = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classDateOfBirth_a2b781b44d207a48f9a17066a54c33bd1}
+
+
+default creator 
+
+gives all 0 value, not assign clock\_\-ref 
+
+Definition at line 100 of file time.cpp.
+
+\hypertarget{classDateOfBirth_a858604e5921287e5cb35dcadbff2689c}{
+\index{DateOfBirth@{DateOfBirth}!DateOfBirth@{DateOfBirth}}
+\index{DateOfBirth@{DateOfBirth}!DateOfBirth@{DateOfBirth}}
+\subsubsection[{DateOfBirth}]{\setlength{\rightskip}{0pt plus 5cm}DateOfBirth::DateOfBirth (
+\begin{DoxyParamCaption}
+\item[{const {\bf Clock} \&}]{u\_\-clock}
+\end{DoxyParamCaption}
+)}}
+\label{classDateOfBirth_a858604e5921287e5cb35dcadbff2689c}
+
+
+creator whith a clock 
+
+set the birth date using the clock you pass it 
+
+Definition at line 108 of file time.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDateOfBirth_a3f2be0fbfb187a421301d50c768784ba}{
+\index{DateOfBirth@{DateOfBirth}!m\_\-absolute@{m\_\-absolute}}
+\index{m\_\-absolute@{m\_\-absolute}!DateOfBirth@{DateOfBirth}}
+\subsubsection[{m\_\-absolute}]{\setlength{\rightskip}{0pt plus 5cm}long int {\bf DateOfBirth::m\_\-absolute}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDateOfBirth_a3f2be0fbfb187a421301d50c768784ba}
+
+
+absolute date of birth 
+
+date of birth expressed as the number of calls occurred before the creation of the form of life 
+
+Definition at line 162 of file time.h.
+
+\hypertarget{classDateOfBirth_a4e0f255eaf334e4e35a49aceee5df28d}{
+\index{DateOfBirth@{DateOfBirth}!m\_\-relative@{m\_\-relative}}
+\index{m\_\-relative@{m\_\-relative}!DateOfBirth@{DateOfBirth}}
+\subsubsection[{m\_\-relative}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf DateOfBirth::m\_\-relative}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classDateOfBirth_a4e0f255eaf334e4e35a49aceee5df28d}
+
+
+relative date of birth 
+
+date of birth expressed as number of cicle occurred before the creation of the form of life 
+
+Definition at line 167 of file time.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{time_8h}{time.h}\item 
+sources/time.cpp\end{DoxyCompactItemize}

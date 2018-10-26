@@ -1,0 +1,1025 @@
+\hypertarget{classEcosystemContainer}{
+\section{EcosystemContainer Class Reference}
+\label{classEcosystemContainer}\index{EcosystemContainer@{EcosystemContainer}}
+}
+
+
+contains all the form of life  
+
+
+
+
+{\ttfamily \#include $<$ecosystem.h$>$}
+
+Inheritance diagram for EcosystemContainer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEcosystemContainer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost::multi\_\-array$<$ \hyperlink{classSubsystemContainer}{SubsystemContainer}, 2 $>$ \hyperlink{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}{ecosys\_\-type}
+\begin{DoxyCompactList}\small\item\em the type of the ecosystem is a boost multi\_\-array container \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEcosystemContainer_a9eca43f1e0446d7f114e53ccacbe21af}{
+\hyperlink{classEcosystemContainer_a9eca43f1e0446d7f114e53ccacbe21af}{EcosystemContainer} (unsigned int u\_\-x\_\-size=0, unsigned int u\_\-y\_\-size=0, bool u\_\-bound=true, unsigned int u\_\-species\_\-number=1, bool u\_\-random\_\-seed=false)}
+\label{classEcosystemContainer_a9eca43f1e0446d7f114e53ccacbe21af}
+
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_aaf7bbc46ec920a24b51732a221bdc537}{
+\hyperlink{classEcosystemContainer_aaf7bbc46ec920a24b51732a221bdc537}{$\sim$EcosystemContainer} ()}
+\label{classEcosystemContainer_aaf7bbc46ec920a24b51732a221bdc537}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classEcosystemContainer_ac2c4ace58f9adbb265f61057420c5565}{is\_\-full} ()
+\begin{DoxyCompactList}\small\item\em is the system full? \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a109ceeea2d948bc0d1ef407540cfb52d}{initialize} (std::istream \&is)
+\begin{DoxyCompactList}\small\item\em initialize the sistem for the \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a1a77a1d8297bba029bee543bed14f791}{initialize} (std::ifstream \&infs)
+\begin{DoxyCompactList}\small\item\em initialize the sistem for \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a8be87beffab0799737ac8fe5091a9ff3}{insert} (\hyperlink{classIndividualAnimal}{IndividualAnimal} \&u\_\-an, const int u\_\-x, const int u\_\-y)
+\begin{DoxyCompactList}\small\item\em insert animal in subecosystem container \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a2ca198ce9aeb2082a9d5b76de4d0b45c}{insert} (\hyperlink{classIndividualVegetable}{IndividualVegetable} \&u\_\-veg, const int u\_\-x, const int u\_\-y)
+\begin{DoxyCompactList}\small\item\em insert vegetable in the ecosystem container \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step} ()
+\begin{DoxyCompactList}\small\item\em step evolution \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a236c01266343664efab29b1a73e72d1d}{step} (\hyperlink{structStepLog}{StepLog} \&log)
+\begin{DoxyCompactList}\small\item\em step evoultion producing steplog \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_acc91c956fd0afc63a055c7072e250914}{FillRandom} ()
+\begin{DoxyCompactList}\small\item\em fill random ecosystem \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_a248efcbe5e1cb7d4da1916df27e05520}{
+bool \hyperlink{classEcosystemContainer_a248efcbe5e1cb7d4da1916df27e05520}{fill} (std::ifstream \&ifs)}
+\label{classEcosystemContainer_a248efcbe5e1cb7d4da1916df27e05520}
+
+\begin{DoxyCompactList}\small\item\em fill the ecosystem from a file \end{DoxyCompactList}\item 
+std::pair$<$ unsigned int, bool $>$ \hyperlink{classEcosystemContainer_a5330060eabcdf726931e3c8984a71073}{specied\_\-population} (const unsigned int u\_\-spec\_\-id=0)
+\begin{DoxyCompactList}\small\item\em total number of specied of this species \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a8f3fecee71e06e35a32ec35e3c01f924}{draw\_\-evolv} (const unsigned int steps)
+\begin{DoxyCompactList}\small\item\em draw and evolv \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a9aedfda6204c1569234bf41489b88bd4}{draw\_\-evolv\_\-fast} (const unsigned int steps, std::string options=std::string(\char`\"{}refresh\_\-populations\char`\"{}))
+\begin{DoxyCompactList}\small\item\em draw the evolution of the system in a fast way \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a37e7e126c7ee9855a4fa3218711a5b1d}{evolv} (unsigned int steps)
+\begin{DoxyCompactList}\small\item\em make the system evolv \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a257157a8dbe84b0f5abcbde4fab0c9ae}{evolv} (unsigned int steps, std::vector$<$ \hyperlink{structStepLog}{StepLog} $>$ \&logs)
+\begin{DoxyCompactList}\small\item\em make the system evolv and create a log \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_acbdecb83a3b8b0f4433b0a01a04d7af4}{evolv} (unsigned int steps, std::ofstream \&ofs)
+\begin{DoxyCompactList}\small\item\em evolv the system and write logs \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_a6e175385de623dcbc018e5d8ae5c8af4}{
+\hyperlink{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}{ecosys\_\-type} \& \hyperlink{classEcosystemContainer_a6e175385de623dcbc018e5d8ae5c8af4}{ecosystem} ()}
+\label{classEcosystemContainer_a6e175385de623dcbc018e5d8ae5c8af4}
+
+\begin{DoxyCompactList}\small\item\em set the ecosystem \end{DoxyCompactList}\item 
+\hyperlink{classSubsystemContainer}{SubsystemContainer} \& \hyperlink{classEcosystemContainer_a3a908f8550a2800227774a0fe623593c}{subsystem} (const int u\_\-x, const int u\_\-y)
+\begin{DoxyCompactList}\small\item\em set the \hyperlink{classSubsystemContainer}{SubsystemContainer} \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_aa23780e2602c9aea376390c309261288}{
+const \hyperlink{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}{ecosys\_\-type} \& \hyperlink{classEcosystemContainer_aa23780e2602c9aea376390c309261288}{ecosystem} () const }
+\label{classEcosystemContainer_aa23780e2602c9aea376390c309261288}
+
+\begin{DoxyCompactList}\small\item\em get the ecosystem \end{DoxyCompactList}\item 
+const \hyperlink{classSubsystemContainer}{SubsystemContainer} \& \hyperlink{classEcosystemContainer_a957ab87f64f41f8c1669f993c1976a85}{subsystem} (int u\_\-x, int u\_\-y) const 
+\begin{DoxyCompactList}\small\item\em get the \hyperlink{classSubsystemContainer}{SubsystemContainer} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::pair$<$ bool, bool $>$ \hyperlink{classEcosystemContainer_a1f8ef307d02139dd3483933057478dfd}{m\_\-newborn} (const unsigned int species\_\-id, const unsigned int subs\_\-x, const unsigned int subs\_\-y, unsigned int u\_\-hp)
+\begin{DoxyCompactList}\small\item\em create a newborn for the species indicated \end{DoxyCompactList}\item 
+std::pair$<$ bool, bool $>$ \hyperlink{classEcosystemContainer_a38c68130f0005de72f8f0ba01bb29472}{m\_\-newborn} (const unsigned int species\_\-id, const unsigned int subs\_\-x, const unsigned int subs\_\-y, unsigned int u\_\-hp, \hyperlink{structStepLog}{StepLog} \&log)
+\begin{DoxyCompactList}\small\item\em create a newborn for the species indicated \end{DoxyCompactList}\item 
+int \hyperlink{classEcosystemContainer_ad046555c1a42891ea1ceb14fe3a2bed5}{m\_\-rand\_\-int} (int a=0, int b=0)
+\begin{DoxyCompactList}\small\item\em get a random int \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a8c82bc02305c597ce40914491fbb8aec}{m\_\-dead} (\hyperlink{classSubsystemContainer_a90723cf9f8cdae39e46ff65c5c898c2c}{SubsystemContainer::an\_\-eat\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_ad6392db27e78a340c21252e63edbe55f}{SubsystemContainer::index\_\-an\_\-by\_\-eat} \&eat\_\-index)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a803abe3366ba3d8579a92efc1096a2a6}{m\_\-dead} (\hyperlink{classSubsystemContainer_a90723cf9f8cdae39e46ff65c5c898c2c}{SubsystemContainer::an\_\-eat\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_ad6392db27e78a340c21252e63edbe55f}{SubsystemContainer::index\_\-an\_\-by\_\-eat} \&eat\_\-index, \hyperlink{structStepLog}{StepLog} \&log, int x, int y)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided and create a log \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_ac20491928d3df161e621586a282b8e04}{m\_\-dead} (\hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{SubsystemContainer::an\_\-id\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{SubsystemContainer::index\_\-an\_\-by\_\-id} \&id\_\-index)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a308e43a136e8990d4229dbdd6a8bfa56}{m\_\-dead} (\hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{SubsystemContainer::an\_\-id\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{SubsystemContainer::index\_\-an\_\-by\_\-id} \&id\_\-index, \hyperlink{structStepLog}{StepLog} \&log, int x, int y)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided and create a log \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a76a30d59c284f91c5df800631b9acd0a}{m\_\-dead} (\hyperlink{classSubsystemContainer_aee4873426aef4e4f9f8d41ffb2b2f781}{SubsystemContainer::an\_\-reproduce\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_a08f08e93dceda155601c8ff6ed31839e}{SubsystemContainer::index\_\-an\_\-by\_\-reproduce} \&repr\_\-index)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_ab9766e2ce58e850fa2764e07027f88db}{m\_\-dead} (\hyperlink{classSubsystemContainer_aee4873426aef4e4f9f8d41ffb2b2f781}{SubsystemContainer::an\_\-reproduce\_\-it} dead\_\-an, \hyperlink{classSubsystemContainer_a08f08e93dceda155601c8ff6ed31839e}{SubsystemContainer::index\_\-an\_\-by\_\-reproduce} \&repr\_\-index, \hyperlink{structStepLog}{StepLog} \&log, int x, int y)
+\begin{DoxyCompactList}\small\item\em remove animal from the index provided and create a log \end{DoxyCompactList}\item 
+void \hyperlink{classEcosystemContainer_a18d6b66ba403b00cbb3069bfcc2a72d6}{m\_\-bound\_\-translator} (int \&x, int \&y)
+\begin{DoxyCompactList}\small\item\em translate the coordinate if there were no boundaries \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_a1f17cee83b62c0b3a088701011a09f0d}{m\_\-where\_\-to\_\-move} (int \&u\_\-x, int \&u\_\-y, const int curr\_\-x, const int curr\_\-y, const unsigned int species\_\-id)
+\begin{DoxyCompactList}\small\item\em where an animal could move \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_af1b88c429ba4807eaa02c1c958a8037c}{m\_\-migrate} (const int curr\_\-x, const int curr\_\-y, \hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{SubsystemContainer::an\_\-id\_\-it} \&to\_\-move, \hyperlink{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{SubsystemContainer::index\_\-an\_\-by\_\-id} \&idx)
+\begin{DoxyCompactList}\small\item\em migrate form curr\_\-x and curr\_\-y using m\_\-where\_\-to\_\-move \end{DoxyCompactList}\item 
+bool \hyperlink{classEcosystemContainer_af383cbfff979511fa2d88776d5058185}{m\_\-migrate} (const int curr\_\-x, const int curr\_\-y, \hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{SubsystemContainer::an\_\-id\_\-it} \&to\_\-move, \hyperlink{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{SubsystemContainer::index\_\-an\_\-by\_\-id} \&idx, \hyperlink{structStepLog}{StepLog} \&log)
+\begin{DoxyCompactList}\small\item\em migrate form curr\_\-x and curr\_\-y using m\_\-where\_\-to\_\-move \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEcosystemContainer_a61ee14b3ace1c7a1548c7dcffbdd4fc2}{
+unsigned int \hyperlink{classEcosystemContainer_a61ee14b3ace1c7a1548c7dcffbdd4fc2}{m\_\-x\_\-size}}
+\label{classEcosystemContainer_a61ee14b3ace1c7a1548c7dcffbdd4fc2}
+
+\begin{DoxyCompactList}\small\item\em x size of the container \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_ae6b6c3cfeb86973490c1e4bf37c6712b}{
+unsigned int \hyperlink{classEcosystemContainer_ae6b6c3cfeb86973490c1e4bf37c6712b}{m\_\-y\_\-size}}
+\label{classEcosystemContainer_ae6b6c3cfeb86973490c1e4bf37c6712b}
+
+\begin{DoxyCompactList}\small\item\em y size of the container \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_a87d7a3c084c9f8ed29a7484c91a9ebb9}{
+bool \hyperlink{classEcosystemContainer_a87d7a3c084c9f8ed29a7484c91a9ebb9}{m\_\-boundaries}}
+\label{classEcosystemContainer_a87d7a3c084c9f8ed29a7484c91a9ebb9}
+
+\begin{DoxyCompactList}\small\item\em if the ecosystem have boundaries or not \end{DoxyCompactList}\item 
+\hyperlink{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}{ecosys\_\-type} \hyperlink{classEcosystemContainer_a19f047377f131b497c7258b58adb1a45}{m\_\-ecosystem}
+\begin{DoxyCompactList}\small\item\em the ecosystem as ensable of subsystem containers \end{DoxyCompactList}\item 
+unsigned long int \hyperlink{classEcosystemContainer_adefb24e46962eab1528a2fc322ae6e53}{m\_\-last\_\-existance\_\-id}
+\begin{DoxyCompactList}\small\item\em the last existance id of a new creature \end{DoxyCompactList}\item 
+\hyperlink{classSpeciesController}{SpeciesController} \hyperlink{classEcosystemContainer_a41211c58341df2a0ef7ee44b69151de0}{m\_\-species\_\-controller}
+\begin{DoxyCompactList}\small\item\em the species controller for this ecosys \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_aaf112f8024a548d0266bd4b87653c2f8}{
+\hyperlink{classClock}{Clock} \hyperlink{classEcosystemContainer_aaf112f8024a548d0266bd4b87653c2f8}{m\_\-clock}}
+\label{classEcosystemContainer_aaf112f8024a548d0266bd4b87653c2f8}
+
+\begin{DoxyCompactList}\small\item\em the clock of the system \end{DoxyCompactList}\item 
+\hypertarget{classEcosystemContainer_aa6403dd5bcafef13d4f696f3f8c4f52a}{
+boost::mt19937 \hyperlink{classEcosystemContainer_aa6403dd5bcafef13d4f696f3f8c4f52a}{m\_\-generator}}
+\label{classEcosystemContainer_aa6403dd5bcafef13d4f696f3f8c4f52a}
+
+\begin{DoxyCompactList}\small\item\em the random number generator used by m\_\-rand\_\-int \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEcosystemContainer_a8863e5007c8cf23c4b14342c947cc1eb}{
+std::ifstream \& {\bfseries operator$>$$>$} (std::ifstream \&is, \hyperlink{classEcosystemContainer}{EcosystemContainer} \&eco)}
+\label{classEcosystemContainer_a8863e5007c8cf23c4b14342c947cc1eb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains all the form of life 
+
+Definition at line 49 of file ecosystem.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}{
+\index{EcosystemContainer@{EcosystemContainer}!ecosys\_\-type@{ecosys\_\-type}}
+\index{ecosys\_\-type@{ecosys\_\-type}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{ecosys\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}typedef boost::multi\_\-array$<${\bf SubsystemContainer}, 2$>$ {\bf EcosystemContainer::ecosys\_\-type}}}
+\label{classEcosystemContainer_a52c612c138ad2af06dcf353e6c541345}
+
+
+the type of the ecosystem is a boost multi\_\-array container 
+
+roughtly is a matrix 
+
+Definition at line 55 of file ecosystem.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEcosystemContainer_a8f3fecee71e06e35a32ec35e3c01f924}{
+\index{EcosystemContainer@{EcosystemContainer}!draw\_\-evolv@{draw\_\-evolv}}
+\index{draw\_\-evolv@{draw\_\-evolv}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{draw\_\-evolv}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::draw\_\-evolv (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{steps}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a8f3fecee71e06e35a32ec35e3c01f924}
+
+
+draw and evolv 
+
+evolv the sistem for a number of steps and draw his evolution this method is slower than draw\_\-evolv\_\-fast because for every step it reset the TH2F and compute the total population for every species in every single subsystem. although the rappresentation is always right. 
+
+Definition at line 61 of file draw\_\-evolv.cpp.
+
+\hypertarget{classEcosystemContainer_a9aedfda6204c1569234bf41489b88bd4}{
+\index{EcosystemContainer@{EcosystemContainer}!draw\_\-evolv\_\-fast@{draw\_\-evolv\_\-fast}}
+\index{draw\_\-evolv\_\-fast@{draw\_\-evolv\_\-fast}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{draw\_\-evolv\_\-fast}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::draw\_\-evolv\_\-fast (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{steps, }
+\item[{std::string}]{options = {\ttfamily std::string(\char`\"{}refresh\_\-populations\char`\"{})}}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a9aedfda6204c1569234bf41489b88bd4}
+
+
+draw the evolution of the system in a fast way 
+
+the system will evolv and for each step will be draw something according to options parameter. this method is faster than draw\_\-evolv because it parses the log produced by step( StepLog) and modify the rappresentation whithout performing a query for every subsystem and for every species. it doesn't reset the TH2F but only modify the wheight of the interested bins 
+
+Definition at line 352 of file draw\_\-evolv.cpp.
+
+\hypertarget{classEcosystemContainer_a37e7e126c7ee9855a4fa3218711a5b1d}{
+\index{EcosystemContainer@{EcosystemContainer}!evolv@{evolv}}
+\index{evolv@{evolv}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{evolv}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::evolv (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{steps}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a37e7e126c7ee9855a4fa3218711a5b1d}
+
+
+make the system evolv 
+
+
+\begin{DoxyParams}{Parameters}
+{\em steps} & number times \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} will be runned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if step fails. 
+\end{DoxyReturn}
+
+
+Definition at line 1362 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a257157a8dbe84b0f5abcbde4fab0c9ae}{
+\index{EcosystemContainer@{EcosystemContainer}!evolv@{evolv}}
+\index{evolv@{evolv}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{evolv}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::evolv (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{steps, }
+\item[{std::vector$<$ {\bf StepLog} $>$ \&}]{logs}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a257157a8dbe84b0f5abcbde4fab0c9ae}
+
+
+make the system evolv and create a log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em steps} & number times \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} will be runned \\
+\hline
+{\em Logs} & a vector of \hyperlink{structStepLog}{StepLog} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if step fails. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structStepLog}{StepLog} 
+\end{DoxySeeAlso}
+
+
+Definition at line 1384 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_acbdecb83a3b8b0f4433b0a01a04d7af4}{
+\index{EcosystemContainer@{EcosystemContainer}!evolv@{evolv}}
+\index{evolv@{evolv}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{evolv}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::evolv (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{steps, }
+\item[{std::ofstream \&}]{ofs}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_acbdecb83a3b8b0f4433b0a01a04d7af4}
+
+
+evolv the system and write logs 
+
+evolv the system and once finisched or once \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} returns false; write using the ofs to a file the results. results are elaborations of \hyperlink{structStepLog}{StepLog} 
+\begin{DoxyParams}{Parameters}
+{\em steps} & number times \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} will be runned \\
+\hline
+{\em ofs} & output file stream in which buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if step fails. 
+\end{DoxyReturn}
+
+
+Definition at line 1411 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_acc91c956fd0afc63a055c7072e250914}{
+\index{EcosystemContainer@{EcosystemContainer}!FillRandom@{FillRandom}}
+\index{FillRandom@{FillRandom}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{FillRandom}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::FillRandom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_acc91c956fd0afc63a055c7072e250914}
+
+
+fill random ecosystem 
+
+each subsystem will be filled by a random number of vivent for each species whith random hp and random sex. the distribution is uniform and linear. this filling method respect the \hyperlink{classSubsystemContainer_abad57ab248735fded65abacb908a1b7c}{SubsystemContainer::is\_\-full}.
+
+this method is written ad FillRandom and not fillrandom just to do a tribute to root-\/cern lib. 
+
+Definition at line 357 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a109ceeea2d948bc0d1ef407540cfb52d}{
+\index{EcosystemContainer@{EcosystemContainer}!initialize@{initialize}}
+\index{initialize@{initialize}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::initialize (
+\begin{DoxyParamCaption}
+\item[{std::istream \&}]{is}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a109ceeea2d948bc0d1ef407540cfb52d}
+
+
+initialize the sistem for the \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & generical input stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization suceed, false if fails 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a1a77a1d8297bba029bee543bed14f791}{
+\index{EcosystemContainer@{EcosystemContainer}!initialize@{initialize}}
+\index{initialize@{initialize}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::initialize (
+\begin{DoxyParamCaption}
+\item[{std::ifstream \&}]{infs}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a1a77a1d8297bba029bee543bed14f791}
+
+
+initialize the sistem for \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infs} & input file stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization suceed, false if fails 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a8be87beffab0799737ac8fe5091a9ff3}{
+\index{EcosystemContainer@{EcosystemContainer}!insert@{insert}}
+\index{insert@{insert}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf IndividualAnimal} \&}]{u\_\-an, }
+\item[{const int}]{u\_\-x, }
+\item[{const int}]{u\_\-y}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a8be87beffab0799737ac8fe5091a9ff3}
+
+
+insert animal in subecosystem container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-an} & the animal to inser \\
+\hline
+{\em u\_\-x} & the x coord of the subsystem you want to insert in \\
+\hline
+{\em u\_\-y} & the y coord of the subsystem you want to insert in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if insertion succed, false if fails 
+\end{DoxyReturn}
+
+
+Definition at line 243 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a2ca198ce9aeb2082a9d5b76de4d0b45c}{
+\index{EcosystemContainer@{EcosystemContainer}!insert@{insert}}
+\index{insert@{insert}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf IndividualVegetable} \&}]{u\_\-veg, }
+\item[{const int}]{u\_\-x, }
+\item[{const int}]{u\_\-y}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a2ca198ce9aeb2082a9d5b76de4d0b45c}
+
+
+insert vegetable in the ecosystem container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-veg} & the vegetable to insert \\
+\hline
+{\em u\_\-x} & the x coord of the subsystem you want to insert in \\
+\hline
+{\em u\_\-y} & the y coord of the subsystem you want to insert in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if insertion succed, false if fails 
+\end{DoxyReturn}
+
+
+Definition at line 300 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_ac2c4ace58f9adbb265f61057420c5565}{
+\index{EcosystemContainer@{EcosystemContainer}!is\_\-full@{is\_\-full}}
+\index{is\_\-full@{is\_\-full}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{is\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::is\_\-full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEcosystemContainer_ac2c4ace58f9adbb265f61057420c5565}
+
+
+is the system full? 
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000001}{Todo}]implement \end{Desc}
+
+
+Implements \hyperlink{classeco_1_1Container_aaba4667933eb47147b319f6daa7da5c2}{eco::Container}.
+
+
+
+Definition at line 92 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a18d6b66ba403b00cbb3069bfcc2a72d6}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-bound\_\-translator@{m\_\-bound\_\-translator}}
+\index{m\_\-bound\_\-translator@{m\_\-bound\_\-translator}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-bound\_\-translator}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-bound\_\-translator (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a18d6b66ba403b00cbb3069bfcc2a72d6}
+
+
+translate the coordinate if there were no boundaries 
+
+if there were no boundaries the x and y coord could be more than m\_\-x\_\-size or m\_\-y\_\-size or less than 0. this function provide a translation of such numbers in an interval from 0 -\/ m\_\-x/y\_\-size.
+
+if the m\_\-boundaries flag is not true and the coordinates are not in the interval it will print an error message and set both x and y to 0 example: if x = m\_\-x\_\-size+1 it becomes 0 
+
+Definition at line 794 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_ac20491928d3df161e621586a282b8e04}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-id\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-id} \&}]{id\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_ac20491928d3df161e621586a282b8e04}
+
+
+remove animal from the index provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em id\_\-index} & the id index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 719 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a8c82bc02305c597ce40914491fbb8aec}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-eat\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-eat} \&}]{eat\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a8c82bc02305c597ce40914491fbb8aec}
+
+
+remove animal from the index provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em eat\_\-index} & the eat index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 683 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a76a30d59c284f91c5df800631b9acd0a}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-reproduce\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-reproduce} \&}]{repr\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a76a30d59c284f91c5df800631b9acd0a}
+
+
+remove animal from the index provided 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em id\_\-index} & the id index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 755 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a803abe3366ba3d8579a92efc1096a2a6}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-eat\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-eat} \&}]{eat\_\-index, }
+\item[{{\bf StepLog} \&}]{log, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a803abe3366ba3d8579a92efc1096a2a6}
+
+
+remove animal from the index provided and create a log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em eat\_\-index} & the eat index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+{\em log} & insert a \hyperlink{structPopulationVariation}{PopulationVariation} inside the \hyperlink{structStepLog}{StepLog} \\
+\hline
+{\em x} & the x coord of the subsystem in which the anima is \\
+\hline
+{\em y} & the y coord of the subsystem in which the anima is \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 696 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a308e43a136e8990d4229dbdd6a8bfa56}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-id\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-id} \&}]{id\_\-index, }
+\item[{{\bf StepLog} \&}]{log, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a308e43a136e8990d4229dbdd6a8bfa56}
+
+
+remove animal from the index provided and create a log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em id\_\-index} & the id index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+{\em log} & insert a \hyperlink{structPopulationVariation}{PopulationVariation} inside the \hyperlink{structStepLog}{StepLog} \\
+\hline
+{\em x} & the x coord of the subsystem in which the anima is \\
+\hline
+{\em y} & the y coord of the subsystem in which the anima is \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 732 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_ab9766e2ce58e850fa2764e07027f88db}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-dead@{m\_\-dead}}
+\index{m\_\-dead@{m\_\-dead}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-dead}]{\setlength{\rightskip}{0pt plus 5cm}void Eco::m\_\-dead (
+\begin{DoxyParamCaption}
+\item[{{\bf SubsystemContainer::an\_\-reproduce\_\-it}}]{dead\_\-an, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-reproduce} \&}]{repr\_\-index, }
+\item[{{\bf StepLog} \&}]{log, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_ab9766e2ce58e850fa2764e07027f88db}
+
+
+remove animal from the index provided and create a log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dead\_\-an} & the animal \\
+\hline
+{\em id\_\-index} & the id index of the \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{SubsystemContainer::vegetable\_\-set} \\
+\hline
+{\em log} & insert a \hyperlink{structPopulationVariation}{PopulationVariation} inside the \hyperlink{structStepLog}{StepLog} \\
+\hline
+{\em x} & the x coord of the subsystem in which the anima is \\
+\hline
+{\em y} & the y coord of the subsystem in which the anima is \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 769 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_af1b88c429ba4807eaa02c1c958a8037c}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-migrate@{m\_\-migrate}}
+\index{m\_\-migrate@{m\_\-migrate}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-migrate}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::m\_\-migrate (
+\begin{DoxyParamCaption}
+\item[{const int}]{curr\_\-x, }
+\item[{const int}]{curr\_\-y, }
+\item[{{\bf SubsystemContainer::an\_\-id\_\-it} \&}]{to\_\-move, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-id} \&}]{idx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_af1b88c429ba4807eaa02c1c958a8037c}
+
+
+migrate form curr\_\-x and curr\_\-y using m\_\-where\_\-to\_\-move 
+
+this method is called inside step. and move the animal from a subsystem to other.
+
+this method were called in \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} when:
+\begin{DoxyItemize}
+\item there is no food in the current subsystem
+\item there is no one for reproduction
+\item there is no space for a newborn
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\_\-x} & the current x subsystem coordinate \\
+\hline
+{\em to\_\-move} & an iterator to the animal to move \\
+\hline
+{\em idx} & the current id\_\-index in which the animal is. this parameter is necessary because the animal had to be removed from the current ecosystem \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if migration occours, else false 
+\end{DoxyReturn}
+
+
+Definition at line 1111 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_af383cbfff979511fa2d88776d5058185}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-migrate@{m\_\-migrate}}
+\index{m\_\-migrate@{m\_\-migrate}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-migrate}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::m\_\-migrate (
+\begin{DoxyParamCaption}
+\item[{const int}]{curr\_\-x, }
+\item[{const int}]{curr\_\-y, }
+\item[{{\bf SubsystemContainer::an\_\-id\_\-it} \&}]{to\_\-move, }
+\item[{{\bf SubsystemContainer::index\_\-an\_\-by\_\-id} \&}]{idx, }
+\item[{{\bf StepLog} \&}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_af383cbfff979511fa2d88776d5058185}
+
+
+migrate form curr\_\-x and curr\_\-y using m\_\-where\_\-to\_\-move 
+
+this method is called inside step. and move the animal from a subsystem to other.
+
+this method were called in \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} when:
+\begin{DoxyItemize}
+\item there is no food in the current subsystem
+\item there is no one for reproduction
+\item there is no space for a newborn
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\_\-x} & the current x subsystem coordinate \\
+\hline
+{\em to\_\-move} & an iterator to the animal to move \\
+\hline
+{\em idx} & the current id\_\-index in which the animal is. this parameter is necessary because the animal had to be removed from the current ecosystem \\
+\hline
+{\em log} & create a \hyperlink{structPopulationVariation}{PopulationVariation} and insert it in the the \hyperlink{structStepLog}{StepLog} passed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if migration occours, else false 
+\end{DoxyReturn}
+
+
+Definition at line 1215 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a38c68130f0005de72f8f0ba01bb29472}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-newborn@{m\_\-newborn}}
+\index{m\_\-newborn@{m\_\-newborn}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-newborn}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$ bool, bool $>$ Eco::m\_\-newborn (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{species\_\-id, }
+\item[{const unsigned int}]{subs\_\-x, }
+\item[{const unsigned int}]{subs\_\-y, }
+\item[{unsigned int}]{u\_\-hp, }
+\item[{{\bf StepLog} \&}]{log}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a38c68130f0005de72f8f0ba01bb29472}
+
+
+create a newborn for the species indicated 
+
+this function is used inside \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} 
+\begin{DoxyParams}{Parameters}
+{\em species\_\-id} & the species id of the newborn \\
+\hline
+{\em subs\_\-x} & the x coord of the subsystem in which the newborn should be \\
+\hline
+{\em subs\_\-y} & the y coord of the subsystem in which the newborn should be \\
+\hline
+{\em log} & the \hyperlink{structStepLog}{StepLog} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+first false if insertion fail, second false if there is no space for the newborn
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structStepLog}{StepLog} 
+\end{DoxySeeAlso}
+
+
+Definition at line 933 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a1f8ef307d02139dd3483933057478dfd}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-newborn@{m\_\-newborn}}
+\index{m\_\-newborn@{m\_\-newborn}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-newborn}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$ bool, bool $>$ Eco::m\_\-newborn (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{species\_\-id, }
+\item[{const unsigned int}]{subs\_\-x, }
+\item[{const unsigned int}]{subs\_\-y, }
+\item[{unsigned int}]{u\_\-hp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a1f8ef307d02139dd3483933057478dfd}
+
+
+create a newborn for the species indicated 
+
+this function is used inside \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{step()} 
+\begin{DoxyParams}{Parameters}
+{\em species\_\-id} & the species id of the newborn \\
+\hline
+{\em subs\_\-x} & the x coord of the subsystem in which the newborn should be \\
+\hline
+{\em subs\_\-y} & the y coord of the subsystem in which the newborn should be \\
+\hline
+{\em log} & the \hyperlink{structStepLog}{StepLog} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+first false if insertion fail, second false if there is no space for the newborn 
+\end{DoxyReturn}
+
+
+Definition at line 846 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_ad046555c1a42891ea1ceb14fe3a2bed5}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-rand\_\-int@{m\_\-rand\_\-int}}
+\index{m\_\-rand\_\-int@{m\_\-rand\_\-int}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-rand\_\-int}]{\setlength{\rightskip}{0pt plus 5cm}int Eco::m\_\-rand\_\-int (
+\begin{DoxyParamCaption}
+\item[{int}]{a = {\ttfamily 0}, }
+\item[{int}]{b = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_ad046555c1a42891ea1ceb14fe3a2bed5}
+
+
+get a random int 
+
+create a random integet from a to b included. the sistribution is uniform. boost random numbers generator where used 
+
+Definition at line 671 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a1f17cee83b62c0b3a088701011a09f0d}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-where\_\-to\_\-move@{m\_\-where\_\-to\_\-move}}
+\index{m\_\-where\_\-to\_\-move@{m\_\-where\_\-to\_\-move}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-where\_\-to\_\-move}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::m\_\-where\_\-to\_\-move (
+\begin{DoxyParamCaption}
+\item[{int \&}]{u\_\-x, }
+\item[{int \&}]{u\_\-y, }
+\item[{const int}]{curr\_\-x, }
+\item[{const int}]{curr\_\-y, }
+\item[{const unsigned int}]{species\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a1f17cee83b62c0b3a088701011a09f0d}
+
+
+where an animal could move 
+
+for a determinate species it controll inside near subsystem if they were full and took a random one of unfull 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-x} & the x coord animal will move \\
+\hline
+{\em curr\_\-x} & the current x coord in which the animal is \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if there is no place to move 
+\end{DoxyReturn}
+
+
+Definition at line 1031 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a5330060eabcdf726931e3c8984a71073}{
+\index{EcosystemContainer@{EcosystemContainer}!specied\_\-population@{specied\_\-population}}
+\index{specied\_\-population@{specied\_\-population}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{specied\_\-population}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$ unsigned int, bool $>$ Eco::specied\_\-population (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-spec\_\-id = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a5330060eabcdf726931e3c8984a71073}
+
+
+total number of specied of this species 
+
+\begin{DoxyReturn}{Returns}
+a pair whith at first member the number of animals present in the ecosystem and at second member true if the species exists and false if not 
+\end{DoxyReturn}
+
+
+Definition at line 1335 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a236c01266343664efab29b1a73e72d1d}{
+\index{EcosystemContainer@{EcosystemContainer}!step@{step}}
+\index{step@{step}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::step (
+\begin{DoxyParamCaption}
+\item[{{\bf StepLog} \&}]{log}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a236c01266343664efab29b1a73e72d1d}
+
+
+step evoultion producing steplog 
+
+make a step in the evolution of the system and produce log.
+
+this function in used in draw\_\-evolv\_\-fast \begin{DoxySeeAlso}{See also}
+\hyperlink{structStepLog}{StepLog} 
+
+\hyperlink{classEcosystemContainer_a9aedfda6204c1569234bf41489b88bd4}{EcosystemContainer::draw\_\-evolv\_\-fast} 
+\end{DoxySeeAlso}
+
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000003}{Todo}]could be a good idea to make the whole couple migrate \end{Desc}
+
+
+
+
+Definition at line 39 of file step\_\-log.cpp.
+
+\hypertarget{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{
+\index{EcosystemContainer@{EcosystemContainer}!step@{step}}
+\index{step@{step}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}bool Eco::step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}
+
+
+step evolution 
+
+make a step in the evolution of the system 
+
+Definition at line 39 of file step.cpp.
+
+\hypertarget{classEcosystemContainer_a3a908f8550a2800227774a0fe623593c}{
+\index{EcosystemContainer@{EcosystemContainer}!subsystem@{subsystem}}
+\index{subsystem@{subsystem}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{subsystem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SubsystemContainer} \& Eco::subsystem (
+\begin{DoxyParamCaption}
+\item[{const int}]{u\_\-x, }
+\item[{const int}]{u\_\-y}
+\end{DoxyParamCaption}
+)}}
+\label{classEcosystemContainer_a3a908f8550a2800227774a0fe623593c}
+
+
+set the \hyperlink{classSubsystemContainer}{SubsystemContainer} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-x} & x coordinate of the subsystem \\
+\hline
+{\em u\_\-y} & y coordinate of the subsystem \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 556 of file ecosystem.cpp.
+
+\hypertarget{classEcosystemContainer_a957ab87f64f41f8c1669f993c1976a85}{
+\index{EcosystemContainer@{EcosystemContainer}!subsystem@{subsystem}}
+\index{subsystem@{subsystem}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{subsystem}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf SubsystemContainer} \& Eco::subsystem (
+\begin{DoxyParamCaption}
+\item[{int}]{u\_\-x, }
+\item[{int}]{u\_\-y}
+\end{DoxyParamCaption}
+) const}}
+\label{classEcosystemContainer_a957ab87f64f41f8c1669f993c1976a85}
+
+
+get the \hyperlink{classSubsystemContainer}{SubsystemContainer} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-x} & x coordinate of the subsystem \\
+\hline
+{\em u\_\-y} & y coordinate of the subsystem \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 618 of file ecosystem.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classEcosystemContainer_a19f047377f131b497c7258b58adb1a45}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-ecosystem@{m\_\-ecosystem}}
+\index{m\_\-ecosystem@{m\_\-ecosystem}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-ecosystem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ecosys\_\-type} {\bf EcosystemContainer::m\_\-ecosystem}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a19f047377f131b497c7258b58adb1a45}
+
+
+the ecosystem as ensable of subsystem containers 
+
+as you can see in ecosys\_\-type this is a bidimensional boost::multy\_\-array (a matrix). please read the boost::multy\_\-array doc befor to edit. range goes from \mbox{[}0\mbox{]}\mbox{[}0\mbox{]} to \mbox{[}m\_\-x\_\-size-\/1\mbox{]}\mbox{[}m\_\-y\_\-size-\/1\mbox{]} 
+
+Definition at line 422 of file ecosystem.h.
+
+\hypertarget{classEcosystemContainer_adefb24e46962eab1528a2fc322ae6e53}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-last\_\-existance\_\-id@{m\_\-last\_\-existance\_\-id}}
+\index{m\_\-last\_\-existance\_\-id@{m\_\-last\_\-existance\_\-id}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-last\_\-existance\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int {\bf EcosystemContainer::m\_\-last\_\-existance\_\-id}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_adefb24e46962eab1528a2fc322ae6e53}
+
+
+the last existance id of a new creature 
+
+due to the fact that there is an unique id\_\-number all the vivent inside a subsystem container vegetable or animal set every new vivent created can not have the same id of another. if this occurs the insertion in the subsystem will fail. so every time an animal is inserted or created by \hyperlink{classEcosystemContainer_acc91c956fd0afc63a055c7072e250914}{FillRandom()} or m\_\-newborn this variable is incremented; 
+
+Definition at line 432 of file ecosystem.h.
+
+\hypertarget{classEcosystemContainer_a41211c58341df2a0ef7ee44b69151de0}{
+\index{EcosystemContainer@{EcosystemContainer}!m\_\-species\_\-controller@{m\_\-species\_\-controller}}
+\index{m\_\-species\_\-controller@{m\_\-species\_\-controller}!EcosystemContainer@{EcosystemContainer}}
+\subsubsection[{m\_\-species\_\-controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SpeciesController} {\bf EcosystemContainer::m\_\-species\_\-controller}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classEcosystemContainer_a41211c58341df2a0ef7ee44b69151de0}
+
+
+the species controller for this ecosys 
+
+the species controller is initializiated calling the methods initialize. 
+
+Definition at line 438 of file ecosystem.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{ecosystem_8h}{ecosystem.h}\item 
+sources/draw\_\-evolv.cpp\item 
+sources/ecosystem.cpp\item 
+sources/step.cpp\item 
+sources/step\_\-log.cpp\end{DoxyCompactItemize}

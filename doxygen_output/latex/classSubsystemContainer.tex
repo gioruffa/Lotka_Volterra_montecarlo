@@ -1,0 +1,628 @@
+\hypertarget{classSubsystemContainer}{
+\section{SubsystemContainer Class Reference}
+\label{classSubsystemContainer}\index{SubsystemContainer@{SubsystemContainer}}
+}
+
+
+sub ecosystem container  
+
+
+
+
+{\ttfamily \#include $<$subsystemcontainer.h$>$}
+
+Inheritance diagram for SubsystemContainer:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSubsystemContainer}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSubsystemContainer_1_1eat}{eat}
+\begin{DoxyCompactList}\small\item\em boost multyindex::ordered\_\-index tag \end{DoxyCompactList}\item 
+struct \hyperlink{structSubsystemContainer_1_1id}{id}
+\begin{DoxyCompactList}\small\item\em boost multyindex::ordered\_\-index tag \end{DoxyCompactList}\item 
+struct \hyperlink{structSubsystemContainer_1_1reproduction}{reproduction}
+\begin{DoxyCompactList}\small\item\em boost multyindex::ordered\_\-index tag \end{DoxyCompactList}\item 
+struct \hyperlink{structSubsystemContainer_1_1spec__id}{spec\_\-id}
+\begin{DoxyCompactList}\small\item\em boost multyindex::ordered\_\-index tag \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef multi\_\-index\_\-container$<$ \hyperlink{classIndividualAnimal}{IndividualAnimal}, indexed\_\-by$<$ ordered\_\-non\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1eat}{eat} $>$, composite\_\-key$<$ \hyperlink{classIndividualAnimal}{IndividualAnimal}, const\_\-mem\_\-fun$<$ \hyperlink{classSpecied}{Specied}, unsigned int,\&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ \hyperlink{classVivent}{Vivent}, unsigned int,\&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1reproduction}{reproduction} $>$, composite\_\-key$<$ \hyperlink{classIndividualAnimal}{IndividualAnimal}, const\_\-mem\_\-fun$<$ \hyperlink{classSpecied}{Specied}, unsigned int,\&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ \hyperlink{classVivent}{Vivent}, \hyperlink{classGender}{Gender},\&IndividualAnimal::gender $>$, const\_\-mem\_\-fun$<$ \hyperlink{classVivent}{Vivent}, unsigned int,\&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1id}{id} $>$, const\_\-mem\_\-fun$<$ \hyperlink{classExistance}{Existance}, \hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{Existance::id\_\-type},\&IndividualAnimal::id\_\-number $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1spec__id}{spec\_\-id} $>$, const\_\-mem\_\-fun$<$ \hyperlink{classSpecied}{Specied}, unsigned int,\&IndividualAnimal::species\_\-id $>$ $>$ $>$$>$ \hyperlink{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}{animal\_\-set}
+\begin{DoxyCompactList}\small\item\em animals container typedef \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ad6392db27e78a340c21252e63edbe55f}{
+typedef animal\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1eat}{eat} $>$::type \hyperlink{classSubsystemContainer_ad6392db27e78a340c21252e63edbe55f}{index\_\-an\_\-by\_\-eat}}
+\label{classSubsystemContainer_ad6392db27e78a340c21252e63edbe55f}
+
+\begin{DoxyCompactList}\small\item\em typedef for animal index 0 eat \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a08f08e93dceda155601c8ff6ed31839e}{
+typedef animal\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1reproduction}{reproduction} $>$::type \hyperlink{classSubsystemContainer_a08f08e93dceda155601c8ff6ed31839e}{index\_\-an\_\-by\_\-reproduce}}
+\label{classSubsystemContainer_a08f08e93dceda155601c8ff6ed31839e}
+
+\begin{DoxyCompactList}\small\item\em typedef for animal index 1 reproduce \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{
+typedef animal\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1id}{id} $>$::type \hyperlink{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}{index\_\-an\_\-by\_\-id}}
+\label{classSubsystemContainer_ae095d19ad8aee4e1f1620166f440cf99}
+
+\begin{DoxyCompactList}\small\item\em typedef for animal index 2 id\_\-number \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a14b34b168bd55dd0b39a69795a65f4f8}{
+typedef animal\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1spec__id}{spec\_\-id} $>$::type \hyperlink{classSubsystemContainer_a14b34b168bd55dd0b39a69795a65f4f8}{index\_\-an\_\-by\_\-spec\_\-id}}
+\label{classSubsystemContainer_a14b34b168bd55dd0b39a69795a65f4f8}
+
+\begin{DoxyCompactList}\small\item\em typedef for animal index 3 species\_\-id \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a90723cf9f8cdae39e46ff65c5c898c2c}{
+typedef index\_\-an\_\-by\_\-eat::iterator \hyperlink{classSubsystemContainer_a90723cf9f8cdae39e46ff65c5c898c2c}{an\_\-eat\_\-it}}
+\label{classSubsystemContainer_a90723cf9f8cdae39e46ff65c5c898c2c}
+
+\begin{DoxyCompactList}\small\item\em typedef for eat animal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a8ca51192ff066562729da7972e1c6d2e}{
+typedef index\_\-an\_\-by\_\-eat::const\_\-iterator \hyperlink{classSubsystemContainer_a8ca51192ff066562729da7972e1c6d2e}{an\_\-eat\_\-const\_\-it}}
+\label{classSubsystemContainer_a8ca51192ff066562729da7972e1c6d2e}
+
+\begin{DoxyCompactList}\small\item\em typedef for eat animal index const iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_aee4873426aef4e4f9f8d41ffb2b2f781}{
+typedef index\_\-an\_\-by\_\-reproduce::iterator \hyperlink{classSubsystemContainer_aee4873426aef4e4f9f8d41ffb2b2f781}{an\_\-reproduce\_\-it}}
+\label{classSubsystemContainer_aee4873426aef4e4f9f8d41ffb2b2f781}
+
+\begin{DoxyCompactList}\small\item\em typedef for reproduce animal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ab227fa38862bc3645a12fa29b277c3c1}{
+typedef index\_\-an\_\-by\_\-reproduce::const\_\-iterator \hyperlink{classSubsystemContainer_ab227fa38862bc3645a12fa29b277c3c1}{an\_\-reproduce\_\-const\_\-it}}
+\label{classSubsystemContainer_ab227fa38862bc3645a12fa29b277c3c1}
+
+\begin{DoxyCompactList}\small\item\em typedef for reproduce animal index const iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{
+typedef index\_\-an\_\-by\_\-id::iterator \hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{an\_\-id\_\-it}}
+\label{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}
+
+\begin{DoxyCompactList}\small\item\em typedef for id animal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a65c443ffed219d6e1d4c745bb98577e0}{
+typedef index\_\-an\_\-by\_\-id::const\_\-iterator \hyperlink{classSubsystemContainer_a65c443ffed219d6e1d4c745bb98577e0}{an\_\-id\_\-const\_\-it}}
+\label{classSubsystemContainer_a65c443ffed219d6e1d4c745bb98577e0}
+
+\begin{DoxyCompactList}\small\item\em typedef for id animal index const iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a1126a7368a8724cd69ea707f6c90bd42}{
+typedef index\_\-an\_\-by\_\-spec\_\-id::iterator \hyperlink{classSubsystemContainer_a1126a7368a8724cd69ea707f6c90bd42}{an\_\-spec\_\-id\_\-it}}
+\label{classSubsystemContainer_a1126a7368a8724cd69ea707f6c90bd42}
+
+\begin{DoxyCompactList}\small\item\em typedef for speces id animal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a7e66c6e5b6efcdaee148cbd72331ef34}{
+typedef index\_\-an\_\-by\_\-spec\_\-id::const\_\-iterator \hyperlink{classSubsystemContainer_a7e66c6e5b6efcdaee148cbd72331ef34}{an\_\-spec\_\-id\_\-const\_\-it}}
+\label{classSubsystemContainer_a7e66c6e5b6efcdaee148cbd72331ef34}
+
+\begin{DoxyCompactList}\small\item\em typedef for speces id animal index const iterator \end{DoxyCompactList}\item 
+typedef multi\_\-index\_\-container$<$ \hyperlink{classIndividualVegetable}{IndividualVegetable}, indexed\_\-by$<$ ordered\_\-non\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1eat}{eat} $>$, composite\_\-key$<$ \hyperlink{classIndividualVegetable}{IndividualVegetable}, const\_\-mem\_\-fun$<$ \hyperlink{classSpecied}{Specied}, unsigned int,\&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ \hyperlink{classVivent}{Vivent}, unsigned int,\&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1id}{id} $>$, const\_\-mem\_\-fun$<$ \hyperlink{classExistance}{Existance}, \hyperlink{classExistance_a82c4092964457cd7da30d53072c62f1a}{Existance::id\_\-type},\&IndividualAnimal::id\_\-number $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<$ \hyperlink{structSubsystemContainer_1_1spec__id}{spec\_\-id} $>$, const\_\-mem\_\-fun$<$ \hyperlink{classSpecied}{Specied}, unsigned int,\&IndividualAnimal::species\_\-id $>$ $>$ $>$$>$ \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{vegetable\_\-set}
+\begin{DoxyCompactList}\small\item\em vegetables container typedef \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a03a3aebd29f38555702dfe6414ca4042}{
+typedef vegetable\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1eat}{eat} $>$::type \hyperlink{classSubsystemContainer_a03a3aebd29f38555702dfe6414ca4042}{index\_\-veg\_\-by\_\-eat}}
+\label{classSubsystemContainer_a03a3aebd29f38555702dfe6414ca4042}
+
+\begin{DoxyCompactList}\small\item\em typedef for vegetable index 0 eat \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a9434fd23ddbbf223a7d839a4709f5eaf}{
+typedef vegetable\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1id}{id} $>$::type \hyperlink{classSubsystemContainer_a9434fd23ddbbf223a7d839a4709f5eaf}{index\_\-veg\_\-by\_\-id}}
+\label{classSubsystemContainer_a9434fd23ddbbf223a7d839a4709f5eaf}
+
+\begin{DoxyCompactList}\small\item\em typedef for vegetable index 1 id\_\-number \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_afce6013ad63346c39bc0d0c68e0933e6}{
+typedef vegetable\_\-set::index$<$ \hyperlink{structSubsystemContainer_1_1spec__id}{spec\_\-id} $>$::type \hyperlink{classSubsystemContainer_afce6013ad63346c39bc0d0c68e0933e6}{index\_\-veg\_\-by\_\-spec\_\-id}}
+\label{classSubsystemContainer_afce6013ad63346c39bc0d0c68e0933e6}
+
+\begin{DoxyCompactList}\small\item\em typedef for vegetable index 2 species\_\-id \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a561754a392ebbecb9360bedd2256d587}{
+typedef index\_\-veg\_\-by\_\-eat::iterator \hyperlink{classSubsystemContainer_a561754a392ebbecb9360bedd2256d587}{veg\_\-eat\_\-it}}
+\label{classSubsystemContainer_a561754a392ebbecb9360bedd2256d587}
+
+\begin{DoxyCompactList}\small\item\em typedef for eat vegetal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a62dc5939b59c39c3b4fa5227205526af}{
+typedef index\_\-veg\_\-by\_\-eat::const\_\-iterator \hyperlink{classSubsystemContainer_a62dc5939b59c39c3b4fa5227205526af}{veg\_\-eat\_\-const\_\-it}}
+\label{classSubsystemContainer_a62dc5939b59c39c3b4fa5227205526af}
+
+\begin{DoxyCompactList}\small\item\em typedef for eat vegetal index const iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a646e7cb7968fdb78105d62bb685aca81}{
+typedef index\_\-veg\_\-by\_\-id::iterator \hyperlink{classSubsystemContainer_a646e7cb7968fdb78105d62bb685aca81}{veg\_\-id\_\-it}}
+\label{classSubsystemContainer_a646e7cb7968fdb78105d62bb685aca81}
+
+\begin{DoxyCompactList}\small\item\em typedef for id vegetal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_aeb7fcecc573d61fcc41cdef2dd9df838}{
+typedef index\_\-veg\_\-by\_\-id::const\_\-iterator \hyperlink{classSubsystemContainer_aeb7fcecc573d61fcc41cdef2dd9df838}{veg\_\-id\_\-const\_\-it}}
+\label{classSubsystemContainer_aeb7fcecc573d61fcc41cdef2dd9df838}
+
+\begin{DoxyCompactList}\small\item\em typedef for id vegetal index const iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a142f6962467d951f6c4051661412c4a9}{
+typedef index\_\-veg\_\-by\_\-spec\_\-id::iterator \hyperlink{classSubsystemContainer_a142f6962467d951f6c4051661412c4a9}{veg\_\-spec\_\-id\_\-it}}
+\label{classSubsystemContainer_a142f6962467d951f6c4051661412c4a9}
+
+\begin{DoxyCompactList}\small\item\em typedef for speces id vegetal index iterator \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a70f2a2528b029427a691668cddc65754}{
+typedef index\_\-veg\_\-by\_\-spec\_\-id::const\_\-iterator \hyperlink{classSubsystemContainer_a70f2a2528b029427a691668cddc65754}{veg\_\-spec\_\-id\_\-const\_\-it}}
+\label{classSubsystemContainer_a70f2a2528b029427a691668cddc65754}
+
+\begin{DoxyCompactList}\small\item\em typedef for speces id vegetal index const iterator \end{DoxyCompactList}\item 
+typedef std::pair$<$ \hyperlink{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}{animal\_\-set}, \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{vegetable\_\-set} $>$ \hyperlink{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}{subsystem\_\-tp}
+\begin{DoxyCompactList}\small\item\em the type of the subsystem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSubsystemContainer_ababfc3a959c6fab15c8613ad744e31d5}{SubsystemContainer} (unsigned int u\_\-x=0, unsigned int u\_\-y=0)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a96ff687276c5b911c83056367e4aa5d7}{
+\hyperlink{classSubsystemContainer_a96ff687276c5b911c83056367e4aa5d7}{$\sim$SubsystemContainer} ()}
+\label{classSubsystemContainer_a96ff687276c5b911c83056367e4aa5d7}
+
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSubsystemContainer_abad57ab248735fded65abacb908a1b7c}{is\_\-full} ()
+\begin{DoxyCompactList}\small\item\em is the container full \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSubsystemContainer_ad3c757166da9538df858c550813124b0}{is\_\-full} (\hyperlink{classSpecied}{Specied} \&sample)
+\begin{DoxyCompactList}\small\item\em is full for this species \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSubsystemContainer_af1f07b97e8efbca22267479d68344783}{is\_\-full} (const unsigned int u\_\-spec\_\-id)
+\begin{DoxyCompactList}\small\item\em is full for this species \end{DoxyCompactList}\item 
+bool \hyperlink{classSubsystemContainer_a2d3ef6a5d11bc8744cdb3d98ba563056}{insert} (\hyperlink{classIndividualAnimal}{IndividualAnimal} \&an)
+\begin{DoxyCompactList}\small\item\em insert a vivent \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ae5575faff44dead9dada0cd8c95feef7}{
+bool \hyperlink{classSubsystemContainer_ae5575faff44dead9dada0cd8c95feef7}{insert} (\hyperlink{classIndividualVegetable}{IndividualVegetable} \&veg)}
+\label{classSubsystemContainer_ae5575faff44dead9dada0cd8c95feef7}
+
+\begin{DoxyCompactList}\small\item\em insert a vivent \end{DoxyCompactList}\item 
+bool \hyperlink{classSubsystemContainer_a4aebe195bf137309f42a528dd3771be0}{remove} (const long unsigned int u\_\-id)
+\begin{DoxyCompactList}\small\item\em remove an animal \end{DoxyCompactList}\item 
+\hyperlink{classSubsystemContainer_a016775688f9d4baed66e8bdc3fbc0ec9}{an\_\-id\_\-it} \hyperlink{classSubsystemContainer_a4d63b50ac6eefd3f322524fe99435574}{find\_\-animal} (const long unsigned int u\_\-id)
+\begin{DoxyCompactList}\small\item\em find animal \end{DoxyCompactList}\item 
+\hyperlink{classSubsystemContainer_a646e7cb7968fdb78105d62bb685aca81}{veg\_\-id\_\-it} \hyperlink{classSubsystemContainer_a403e286ac23c44b28e82acb3613d88c2}{find\_\-vegetable} (const long unsigned int u\_\-id)
+\begin{DoxyCompactList}\small\item\em find vegetable \end{DoxyCompactList}\item 
+std::pair$<$ unsigned int, bool $>$ \hyperlink{classSubsystemContainer_a383ac4ca92778f71ebc8d6610382b825}{count\_\-vivents} (const unsigned int u\_\-spec\_\-id=0, \hyperlink{classSpeciesController}{SpeciesController} u\_\-spec\_\-con=\hyperlink{classSpeciesController}{SpeciesController}(0))
+\begin{DoxyCompactList}\small\item\em count the number of vivent in this subsystem \end{DoxyCompactList}\item 
+std::pair$<$ unsigned int, bool $>$ \hyperlink{classSubsystemContainer_a4e9a8aabfe39a9a3abb283da0dc5acfa}{count\_\-vivents} (const \hyperlink{structSpeciesInfo}{SpeciesInfo} u\_\-spec\_\-info)
+\begin{DoxyCompactList}\small\item\em count the number of vivent in this subsystem \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a706f074071c227f63e6b7095fabee40f}{
+\hyperlink{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}{subsystem\_\-tp} \& \hyperlink{classSubsystemContainer_a706f074071c227f63e6b7095fabee40f}{sub\_\-ecosystem} ()}
+\label{classSubsystemContainer_a706f074071c227f63e6b7095fabee40f}
+
+\begin{DoxyCompactList}\small\item\em set the sub ecosystem \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_aaf2520b985e9173fafa07627fce7e832}{
+\hyperlink{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}{animal\_\-set} \& \hyperlink{classSubsystemContainer_aaf2520b985e9173fafa07627fce7e832}{animal\_\-sub\_\-ecosystem} ()}
+\label{classSubsystemContainer_aaf2520b985e9173fafa07627fce7e832}
+
+\begin{DoxyCompactList}\small\item\em set animal\_\-set \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a19515c2c6dd086d7d980216346ab2184}{
+\hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{vegetable\_\-set} \& \hyperlink{classSubsystemContainer_a19515c2c6dd086d7d980216346ab2184}{vegetable\_\-sub\_\-ecosystem} ()}
+\label{classSubsystemContainer_a19515c2c6dd086d7d980216346ab2184}
+
+\begin{DoxyCompactList}\small\item\em set vegetable\_\-set \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ab3e74b7e84eaef44fe78ea9fba2da4a5}{
+unsigned int \& \hyperlink{classSubsystemContainer_ab3e74b7e84eaef44fe78ea9fba2da4a5}{x\_\-position} ()}
+\label{classSubsystemContainer_ab3e74b7e84eaef44fe78ea9fba2da4a5}
+
+\begin{DoxyCompactList}\small\item\em set x\_\-position \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a7b019b1b35557644630c5ff72de62243}{
+unsigned int \& \hyperlink{classSubsystemContainer_a7b019b1b35557644630c5ff72de62243}{y\_\-position} ()}
+\label{classSubsystemContainer_a7b019b1b35557644630c5ff72de62243}
+
+\begin{DoxyCompactList}\small\item\em set y\_\-position \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_ae35bcf55318dd4be8d39ba60cf27ca31}{
+const \hyperlink{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}{subsystem\_\-tp} \& \hyperlink{classSubsystemContainer_ae35bcf55318dd4be8d39ba60cf27ca31}{sub\_\-ecosystem} () const }
+\label{classSubsystemContainer_ae35bcf55318dd4be8d39ba60cf27ca31}
+
+\begin{DoxyCompactList}\small\item\em get the sub ecosystem \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_aa5df163b7162b4250dfd9c115392a545}{
+const \hyperlink{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}{animal\_\-set} \& \hyperlink{classSubsystemContainer_aa5df163b7162b4250dfd9c115392a545}{animal\_\-sub\_\-ecosystem} () const }
+\label{classSubsystemContainer_aa5df163b7162b4250dfd9c115392a545}
+
+\begin{DoxyCompactList}\small\item\em get animal\_\-set \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a755d4d2106c2c474dea5a6b0065f15f7}{
+const \hyperlink{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{vegetable\_\-set} \& \hyperlink{classSubsystemContainer_a755d4d2106c2c474dea5a6b0065f15f7}{vegetable\_\-sub\_\-ecosystem} () const }
+\label{classSubsystemContainer_a755d4d2106c2c474dea5a6b0065f15f7}
+
+\begin{DoxyCompactList}\small\item\em get vegetable\_\-set \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a317b9541923b6c520e17b7f901131537}{
+unsigned int \hyperlink{classSubsystemContainer_a317b9541923b6c520e17b7f901131537}{x\_\-position} () const }
+\label{classSubsystemContainer_a317b9541923b6c520e17b7f901131537}
+
+\begin{DoxyCompactList}\small\item\em get m\_\-x\_\-position \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_aa74c3e4ccf46c4c8941e86ffa07a6926}{
+unsigned int \hyperlink{classSubsystemContainer_aa74c3e4ccf46c4c8941e86ffa07a6926}{y\_\-position} () const }
+\label{classSubsystemContainer_aa74c3e4ccf46c4c8941e86ffa07a6926}
+
+\begin{DoxyCompactList}\small\item\em get m\_\-y\_\-position \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}{subsystem\_\-tp} \hyperlink{classSubsystemContainer_aa85642dac44badafe0d6694c4e7893aa}{m\_\-sub\_\-ecosystem}
+\begin{DoxyCompactList}\small\item\em the sub ecosistem \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_a2e69cbf8b4bb99b55020829c2036bcc8}{
+unsigned int \hyperlink{classSubsystemContainer_a2e69cbf8b4bb99b55020829c2036bcc8}{m\_\-x\_\-position}}
+\label{classSubsystemContainer_a2e69cbf8b4bb99b55020829c2036bcc8}
+
+\begin{DoxyCompactList}\small\item\em x position of the subsystem in the ecosystem \end{DoxyCompactList}\item 
+\hypertarget{classSubsystemContainer_afca7441a379efcea7d8b26a5ffa952a9}{
+unsigned int \hyperlink{classSubsystemContainer_afca7441a379efcea7d8b26a5ffa952a9}{m\_\-y\_\-position}}
+\label{classSubsystemContainer_afca7441a379efcea7d8b26a5ffa952a9}
+
+\begin{DoxyCompactList}\small\item\em y position of the subsystem in the ecosystem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std::ostream \& \hyperlink{classSubsystemContainer_acadf383984be65d380d82f1696afcd8a}{operator$<$$<$} (std::ostream \&os, const \hyperlink{classSubsystemContainer}{SubsystemContainer} \&subc)
+\begin{DoxyCompactList}\small\item\em ostream operator of \hyperlink{classSubsystemContainer}{SubsystemContainer} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+sub ecosystem container 
+
+this class contain the sub ecosistem composed by all individual animals and vegetables. 
+
+Definition at line 69 of file subsystemcontainer.h.
+
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}{
+\index{SubsystemContainer@{SubsystemContainer}!animal\_\-set@{animal\_\-set}}
+\index{animal\_\-set@{animal\_\-set}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{animal\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}typedef multi\_\-index\_\-container$<$ {\bf IndividualAnimal}, indexed\_\-by$<$ ordered\_\-non\_\-unique$<$ tag$<${\bf eat}$>$, composite\_\-key$<$ {\bf IndividualAnimal}, const\_\-mem\_\-fun$<$ {\bf Specied}, unsigned int, \&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ {\bf Vivent}, unsigned int, \&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<${\bf reproduction}$>$, composite\_\-key$<$ {\bf IndividualAnimal}, const\_\-mem\_\-fun$<$ {\bf Specied}, unsigned int, \&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ {\bf Vivent}, {\bf Gender}, \&IndividualAnimal::gender $>$, const\_\-mem\_\-fun$<$ {\bf Vivent}, unsigned int, \&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-unique$<$ tag$<${\bf id}$>$, const\_\-mem\_\-fun$<$ {\bf Existance}, {\bf Existance::id\_\-type} , \&IndividualAnimal::id\_\-number $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<${\bf spec\_\-id}$>$, const\_\-mem\_\-fun$<$ {\bf Specied}, unsigned int, \&IndividualAnimal::species\_\-id $>$ $>$ $>$$>$ {\bf SubsystemContainer::animal\_\-set}}}
+\label{classSubsystemContainer_a8f87e58293188f19a139b1f9ac21fe3e}
+
+
+animals container typedef 
+
+following the boost::multi\_\-index tradition the typedef of this container is particularli cumbersome, but this is a small rate to pay in front of the extreme power of these containers
+
+boost multi\_\-index containers gave us the possibility to sort and index the elements of a single container in different ways.
+
+in addiction we uses the feature of composite\_\-key indexing. this give us the possibility (for example) to have contiguity for all the animals belonging to the same species and then have it sorted by ascendent hp.
+
+in this implementation we have numerous indexes:
+
+
+\begin{DoxyItemize}
+\item 0 composite key index rappresenting the attitude to be eaten. \hyperlink{classIndividualAnimal}{IndividualAnimal} were sorted first by species\_\-id , then by hp.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 1 composite key index rappresenting the \char`\"{}sexual charming\char`\"{} \hyperlink{classIndividualAnimal}{IndividualAnimal} were sorted first by species\_\-id , then by \hyperlink{classGender}{Gender} , and finally by hp;
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 2 order unique by the \hyperlink{classIndividualAnimal}{IndividualAnimal} id\_\-number. this means that no animals whith same id were admitted
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 3 order non unique by species id, this order is used to fast compute the number of animals of the same species and similar purposes 
+\end{DoxyItemize}
+
+Definition at line 189 of file subsystemcontainer.h.
+
+\hypertarget{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}{
+\index{SubsystemContainer@{SubsystemContainer}!subsystem\_\-tp@{subsystem\_\-tp}}
+\index{subsystem\_\-tp@{subsystem\_\-tp}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{subsystem\_\-tp}]{\setlength{\rightskip}{0pt plus 5cm}typedef std::pair$<${\bf animal\_\-set} , {\bf vegetable\_\-set}$>$ {\bf SubsystemContainer::subsystem\_\-tp}}}
+\label{classSubsystemContainer_a2c517c44fccdecc58869c24ab6d3f667}
+
+
+the type of the subsystem 
+
+first member is an animal\_\-set second is a vegetable\_\-set 
+
+Definition at line 334 of file subsystemcontainer.h.
+
+\hypertarget{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}{
+\index{SubsystemContainer@{SubsystemContainer}!vegetable\_\-set@{vegetable\_\-set}}
+\index{vegetable\_\-set@{vegetable\_\-set}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{vegetable\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}typedef multi\_\-index\_\-container$<$ {\bf IndividualVegetable}, indexed\_\-by$<$ ordered\_\-non\_\-unique$<$ tag$<${\bf eat}$>$, composite\_\-key$<$ {\bf IndividualVegetable}, const\_\-mem\_\-fun$<$ {\bf Specied}, unsigned int, \&IndividualAnimal::species\_\-id $>$, const\_\-mem\_\-fun$<$ {\bf Vivent}, unsigned int, \&IndividualAnimal::hp $>$ $>$ $>$, ordered\_\-unique$<$ tag$<${\bf id}$>$, const\_\-mem\_\-fun$<$ {\bf Existance}, {\bf Existance::id\_\-type} , \&IndividualAnimal::id\_\-number $>$ $>$, ordered\_\-non\_\-unique$<$ tag$<${\bf spec\_\-id}$>$, const\_\-mem\_\-fun$<$ {\bf Specied}, unsigned int, \&IndividualAnimal::species\_\-id $>$ $>$ $>$$>$ {\bf SubsystemContainer::vegetable\_\-set}}}
+\label{classSubsystemContainer_aa11de189765005941e3c055feceb3db0}
+
+
+vegetables container typedef 
+
+this container is similar but less complicated than the former. this is due to the fact that this version of the project does not implement vegetable reproduction.
+
+\hyperlink{classVegetable}{Vegetable} can only be eaten so the indexes are:
+
+
+\begin{DoxyItemize}
+\item 0 composite key index rappresenting the attitude to be eaten. \hyperlink{classIndividualAnimal}{IndividualAnimal} were sorted first by species\_\-id , then by hp.
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 1 order unique by the \hyperlink{classIndividualAnimal}{IndividualAnimal} id\_\-number. this means that no animals whith same id were admitted
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item 2 order non unique by species id, this order is used to fast compute the number of animals of the same species and similar purposes 
+\end{DoxyItemize}
+
+Definition at line 295 of file subsystemcontainer.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSubsystemContainer_ababfc3a959c6fab15c8613ad744e31d5}{
+\index{SubsystemContainer@{SubsystemContainer}!SubsystemContainer@{SubsystemContainer}}
+\index{SubsystemContainer@{SubsystemContainer}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{SubsystemContainer}]{\setlength{\rightskip}{0pt plus 5cm}SubsystemContainer::SubsystemContainer (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{u\_\-x = {\ttfamily 0}, }
+\item[{unsigned int}]{u\_\-y = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_ababfc3a959c6fab15c8613ad744e31d5}
+
+
+default constructor 
+
+set's the position of the subsystem 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-x} & x position \\
+\hline
+{\em u\_\-y} & y position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file subsystemcontainer.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSubsystemContainer_a4e9a8aabfe39a9a3abb283da0dc5acfa}{
+\index{SubsystemContainer@{SubsystemContainer}!count\_\-vivents@{count\_\-vivents}}
+\index{count\_\-vivents@{count\_\-vivents}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{count\_\-vivents}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$ unsigned int, bool $>$ SubC::count\_\-vivents (
+\begin{DoxyParamCaption}
+\item[{const {\bf SpeciesInfo}}]{u\_\-spec\_\-info}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a4e9a8aabfe39a9a3abb283da0dc5acfa}
+
+
+count the number of vivent in this subsystem 
+
+returns the number of vivent of a determinate species id if no species id is indicated returns the total ammount of vivent 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-spec\_\-info} & species info of the species \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pair whit first member the number of vivent counted, at second member true if the info is correct, false if species info had noot been passed; 
+\end{DoxyReturn}
+
+
+Definition at line 426 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_a383ac4ca92778f71ebc8d6610382b825}{
+\index{SubsystemContainer@{SubsystemContainer}!count\_\-vivents@{count\_\-vivents}}
+\index{count\_\-vivents@{count\_\-vivents}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{count\_\-vivents}]{\setlength{\rightskip}{0pt plus 5cm}std::pair$<$ unsigned int, bool $>$ SubC::count\_\-vivents (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-spec\_\-id = {\ttfamily 0}, }
+\item[{{\bf SpeciesController}}]{u\_\-spec\_\-con = {\ttfamily {\bf SpeciesController}(0)}}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a383ac4ca92778f71ebc8d6610382b825}
+
+
+count the number of vivent in this subsystem 
+
+returns the number of vivent of a determinate species id
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-spec\_\-id} & the species id of the species \\
+\hline
+{\em u\_\-spec\_\-con} & the species controller. necessary to determinate if vegetable or animal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pair whit first member the number of vivent counted, at second member true if the spec id is correct, false if spec id is not correct or \hyperlink{classSpeciesController}{SpeciesController} had not been passed 
+\end{DoxyReturn}
+
+
+Definition at line 389 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_a4d63b50ac6eefd3f322524fe99435574}{
+\index{SubsystemContainer@{SubsystemContainer}!find\_\-animal@{find\_\-animal}}
+\index{find\_\-animal@{find\_\-animal}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{find\_\-animal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SubC::an\_\-id\_\-it} SubC::find\_\-animal (
+\begin{DoxyParamCaption}
+\item[{const long unsigned int}]{u\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a4d63b50ac6eefd3f322524fe99435574}
+
+
+find animal 
+
+returns an iterator to the searched vivent 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-id} & id of the animal to search to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id iterator of the id index pointing to the searched animal. if not found returns end() 
+\end{DoxyReturn}
+
+
+Definition at line 358 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_a403e286ac23c44b28e82acb3613d88c2}{
+\index{SubsystemContainer@{SubsystemContainer}!find\_\-vegetable@{find\_\-vegetable}}
+\index{find\_\-vegetable@{find\_\-vegetable}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{find\_\-vegetable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf SubC::veg\_\-id\_\-it} SubC::find\_\-vegetable (
+\begin{DoxyParamCaption}
+\item[{const long unsigned int}]{u\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a403e286ac23c44b28e82acb3613d88c2}
+
+
+find vegetable 
+
+returns an iterator to the searched vivent 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-id} & id of the vegetable to search to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+id iterator of the id index pointing to the searched vegetable. if not found returns end() 
+\end{DoxyReturn}
+
+
+Definition at line 372 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_a2d3ef6a5d11bc8744cdb3d98ba563056}{
+\index{SubsystemContainer@{SubsystemContainer}!insert@{insert}}
+\index{insert@{insert}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}bool SubC::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf IndividualAnimal} \&}]{an}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a2d3ef6a5d11bc8744cdb3d98ba563056}
+
+
+insert a vivent 
+
+return true if the vivent had been inserted correctly 
+
+Definition at line 284 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_ad3c757166da9538df858c550813124b0}{
+\index{SubsystemContainer@{SubsystemContainer}!is\_\-full@{is\_\-full}}
+\index{is\_\-full@{is\_\-full}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{is\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}bool SubC::is\_\-full (
+\begin{DoxyParamCaption}
+\item[{{\bf Specied} \&}]{sample}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSubsystemContainer_ad3c757166da9538df858c550813124b0}
+
+
+is full for this species 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample} & sample specied animal to control free space \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_abad57ab248735fded65abacb908a1b7c}{
+\index{SubsystemContainer@{SubsystemContainer}!is\_\-full@{is\_\-full}}
+\index{is\_\-full@{is\_\-full}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{is\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}bool SubC::is\_\-full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSubsystemContainer_abad57ab248735fded65abacb908a1b7c}
+
+
+is the container full 
+
+potrebbe restare per implementazioni barbare del tipo: c'è ancora spazio per qualcosa? 
+
+Implements \hyperlink{classeco_1_1Container_aaba4667933eb47147b319f6daa7da5c2}{eco::Container}.
+
+
+
+Definition at line 278 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_af1f07b97e8efbca22267479d68344783}{
+\index{SubsystemContainer@{SubsystemContainer}!is\_\-full@{is\_\-full}}
+\index{is\_\-full@{is\_\-full}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{is\_\-full}]{\setlength{\rightskip}{0pt plus 5cm}bool SubC::is\_\-full (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{u\_\-spec\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSubsystemContainer_af1f07b97e8efbca22267479d68344783}
+
+
+is full for this species 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\_\-spec\_\-id} & is the id of the species to controll \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file subsystemcontainer.cpp.
+
+\hypertarget{classSubsystemContainer_a4aebe195bf137309f42a528dd3771be0}{
+\index{SubsystemContainer@{SubsystemContainer}!remove@{remove}}
+\index{remove@{remove}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}bool SubC::remove (
+\begin{DoxyParamCaption}
+\item[{const long unsigned int}]{u\_\-id}
+\end{DoxyParamCaption}
+)}}
+\label{classSubsystemContainer_a4aebe195bf137309f42a528dd3771be0}
+
+
+remove an animal 
+
+remove the animal whith specified id return true if the operation succeed 
+\begin{DoxyParams}{Parameters}
+{\em u\_\-id} & id of the animal to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 346 of file subsystemcontainer.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classSubsystemContainer_acadf383984be65d380d82f1696afcd8a}{
+\index{SubsystemContainer@{SubsystemContainer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std::ostream \&}]{os, }
+\item[{const {\bf SubsystemContainer} \&}]{subc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classSubsystemContainer_acadf383984be65d380d82f1696afcd8a}
+
+
+ostream operator of \hyperlink{classSubsystemContainer}{SubsystemContainer} 
+
+modify the stream printing:
+
+
+\begin{DoxyItemize}
+\item the susbsytem coordinates
+\item animal\_\-set size
+\item vegetable\_\-set size
+\item all the animals and the vegetables 
+\end{DoxyItemize}
+
+\subsection{Member Data Documentation}
+\hypertarget{classSubsystemContainer_aa85642dac44badafe0d6694c4e7893aa}{
+\index{SubsystemContainer@{SubsystemContainer}!m\_\-sub\_\-ecosystem@{m\_\-sub\_\-ecosystem}}
+\index{m\_\-sub\_\-ecosystem@{m\_\-sub\_\-ecosystem}!SubsystemContainer@{SubsystemContainer}}
+\subsubsection[{m\_\-sub\_\-ecosystem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf subsystem\_\-tp} {\bf SubsystemContainer::m\_\-sub\_\-ecosystem}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classSubsystemContainer_aa85642dac44badafe0d6694c4e7893aa}
+
+
+the sub ecosistem 
+
+contains animals and vegetables 
+
+Definition at line 489 of file subsystemcontainer.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+sources/\hyperlink{subsystemcontainer_8h}{subsystemcontainer.h}\item 
+sources/\hyperlink{subsystemcontainer_8cpp}{subsystemcontainer.cpp}\end{DoxyCompactItemize}

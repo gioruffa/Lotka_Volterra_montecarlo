@@ -1,0 +1,18 @@
+#	SOURCE FILE:
+#	for documentation about this string
+#	see SpeciesController::m_string_parser()
+#
+#	this is intended to be only a fast reference
+#
+#	line format:
+#	species_id|species_name|vegetable/anmal|life_coast|health_status|calorie|life_space|likings
+#	for likings please see class Like
+#
+#	newline will be ignored.
+#	a line is considered a commnet only if starts whith a '#'.
+#	if some will go wrong , an error is printed on STDERR
+
+1|carrot|vegetable|0|50|100|99|2-0|3-0
+2|rabbit|animal|2|10|200|10|1-100|3-0
+3|wolf|animal|2|10|200|20|2-100|1-0
+

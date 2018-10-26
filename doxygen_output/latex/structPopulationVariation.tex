@@ -1,0 +1,102 @@
+\hypertarget{structPopulationVariation}{
+\section{PopulationVariation Struct Reference}
+\label{structPopulationVariation}\index{PopulationVariation@{PopulationVariation}}
+}
+
+
+variation of population for a species in a subsystemcontainer  
+
+
+
+
+{\ttfamily \#include $<$populationvariation.hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structPopulationVariation_aae36f241d7c3048d87f581bce205fcd1}{
+typedef std::pair$<$ unsigned int, unsigned int $>$ \hyperlink{structPopulationVariation_aae36f241d7c3048d87f581bce205fcd1}{coord\_\-tp}}
+\label{structPopulationVariation_aae36f241d7c3048d87f581bce205fcd1}
+
+\begin{DoxyCompactList}\small\item\em coordinates first x second y \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structPopulationVariation_ae2c29030c2724faa35e1e423e9e4f6d3}{
+\hyperlink{structPopulationVariation_ae2c29030c2724faa35e1e423e9e4f6d3}{PopulationVariation} (\hyperlink{structPopulationVariation_aae36f241d7c3048d87f581bce205fcd1}{coord\_\-tp} u\_\-coord\_\-tp, unsigned int u\_\-species\_\-id, int u\_\-variation, long int u\_\-abs\_\-time, float u\_\-rel\_\-time)}
+\label{structPopulationVariation_ae2c29030c2724faa35e1e423e9e4f6d3}
+
+\begin{DoxyCompactList}\small\item\em default contstructor \end{DoxyCompactList}\item 
+\hypertarget{structPopulationVariation_a951e2ea39e8aa3024f514da0e79da185}{
+\hyperlink{structPopulationVariation_a951e2ea39e8aa3024f514da0e79da185}{$\sim$PopulationVariation} ()}
+\label{structPopulationVariation_a951e2ea39e8aa3024f514da0e79da185}
+
+\begin{DoxyCompactList}\small\item\em deafult bestructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structPopulationVariation_a287eca2a34e5c68d3066456396408e03}{
+\hyperlink{structPopulationVariation_aae36f241d7c3048d87f581bce205fcd1}{coord\_\-tp} \hyperlink{structPopulationVariation_a287eca2a34e5c68d3066456396408e03}{subs\_\-coord}}
+\label{structPopulationVariation_a287eca2a34e5c68d3066456396408e03}
+
+\begin{DoxyCompactList}\small\item\em subsystem coordinate in which occours the variation \end{DoxyCompactList}\item 
+\hypertarget{structPopulationVariation_ad2f5ef6c52e0f3db00c5b5b66d7039e9}{
+unsigned int \hyperlink{structPopulationVariation_ad2f5ef6c52e0f3db00c5b5b66d7039e9}{species\_\-id}}
+\label{structPopulationVariation_ad2f5ef6c52e0f3db00c5b5b66d7039e9}
+
+\begin{DoxyCompactList}\small\item\em the species of the animal that variate \end{DoxyCompactList}\item 
+int \hyperlink{structPopulationVariation_a1dc7b506e2e3d3a0ba8ce0390a9d2c7d}{variation}
+\begin{DoxyCompactList}\small\item\em the variation \end{DoxyCompactList}\item 
+\hypertarget{structPopulationVariation_a49b63a98bc5c0d21ad541454afd9f39a}{
+long int \hyperlink{structPopulationVariation_a49b63a98bc5c0d21ad541454afd9f39a}{abs\_\-time}}
+\label{structPopulationVariation_a49b63a98bc5c0d21ad541454afd9f39a}
+
+\begin{DoxyCompactList}\small\item\em absolute time of the variation \end{DoxyCompactList}\item 
+\hypertarget{structPopulationVariation_a50a11ac13f338efd289b14b79ea87a02}{
+float \hyperlink{structPopulationVariation_a50a11ac13f338efd289b14b79ea87a02}{rel\_\-time}}
+\label{structPopulationVariation_a50a11ac13f338efd289b14b79ea87a02}
+
+\begin{DoxyCompactList}\small\item\em relative time of the variation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+variation of population for a species in a subsystemcontainer 
+
+this class contains the population variation for a species in a determinate subsystem container this class is layered inside \hyperlink{structStepLog}{StepLog} class and parsed by \hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{EcosystemContainer::step}; \begin{DoxySeeAlso}{See also}
+\hyperlink{structStepLog}{StepLog} 
+
+\hyperlink{classEcosystemContainer_a16d9614266ac07dc5252b1e731ab4712}{EcosystemContainer::step} 
+
+\hyperlink{classSubsystemContainer}{SubsystemContainer} 
+
+\hyperlink{structPopulationVariation_a287eca2a34e5c68d3066456396408e03}{subs\_\-coord} 
+
+\hyperlink{structPopulationVariation_ad2f5ef6c52e0f3db00c5b5b66d7039e9}{species\_\-id} 
+
+vartiation 
+\end{DoxySeeAlso}
+
+
+Definition at line 38 of file populationvariation.hpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structPopulationVariation_a1dc7b506e2e3d3a0ba8ce0390a9d2c7d}{
+\index{PopulationVariation@{PopulationVariation}!variation@{variation}}
+\index{variation@{variation}!PopulationVariation@{PopulationVariation}}
+\subsubsection[{variation}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf PopulationVariation::variation}}}
+\label{structPopulationVariation_a1dc7b506e2e3d3a0ba8ce0390a9d2c7d}
+
+
+the variation 
+
+example: if the animal die variation is -\/1 
+
+Definition at line 71 of file populationvariation.hpp.
+
+
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+sources/populationvariation.hpp\end{DoxyCompactItemize}

@@ -1,0 +1,315 @@
+\contentsline {chapter}{\numberline {1}Ecosystem Simulator}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Model Features}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}N Species}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Mutual Appetite}{1}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Vivent Gender}{1}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Purposes}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Vivent Model}{2}{section.1.4}
+\contentsline {chapter}{\numberline {2}Todo List}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class Hierarchy}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Class List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}File Index}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}File List}{9}{section.5.1}
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}AbstractClock Class Reference}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{11}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Member Function Documentation}{11}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}tick}{11}{subsubsection.6.1.2.1}
+\contentsline {section}{\numberline {6.2}Animal Class Reference}{12}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{13}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{13}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Animal}{13}{subsubsection.6.2.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2.2}$\sim $Animal}{13}{subsubsection.6.2.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{13}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}live}{13}{subsubsection.6.2.3.1}
+\contentsline {subsection}{\numberline {6.2.4}Member Data Documentation}{13}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}m\_\discretionary {-}{}{}fight\_\discretionary {-}{}{}coast}{13}{subsubsection.6.2.4.1}
+\contentsline {section}{\numberline {6.3}change\_\discretionary {-}{}{}animal\_\discretionary {-}{}{}appetite Struct Reference}{14}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{14}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}change\_\discretionary {-}{}{}animal\_\discretionary {-}{}{}hp Struct Reference}{14}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{15}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}change\_\discretionary {-}{}{}animal\_\discretionary {-}{}{}libido Struct Reference}{15}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{16}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.6}Clock Class Reference}{16}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{17}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{17}{subsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.2.1}Clock}{17}{subsubsection.6.6.2.1}
+\contentsline {subsection}{\numberline {6.6.3}Member Function Documentation}{17}{subsection.6.6.3}
+\contentsline {subsubsection}{\numberline {6.6.3.1}tick}{17}{subsubsection.6.6.3.1}
+\contentsline {section}{\numberline {6.7}eco::Container Class Reference}{18}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{18}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Member Function Documentation}{18}{subsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.2.1}is\_\discretionary {-}{}{}full}{18}{subsubsection.6.7.2.1}
+\contentsline {section}{\numberline {6.8}Controller Class Reference}{19}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{19}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Member Function Documentation}{19}{subsection.6.8.2}
+\contentsline {subsubsection}{\numberline {6.8.2.1}check}{19}{subsubsection.6.8.2.1}
+\contentsline {section}{\numberline {6.9}DateOfBirth Class Reference}{20}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{21}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{21}{subsection.6.9.2}
+\contentsline {subsubsection}{\numberline {6.9.2.1}DateOfBirth}{21}{subsubsection.6.9.2.1}
+\contentsline {subsubsection}{\numberline {6.9.2.2}DateOfBirth}{21}{subsubsection.6.9.2.2}
+\contentsline {subsection}{\numberline {6.9.3}Member Data Documentation}{21}{subsection.6.9.3}
+\contentsline {subsubsection}{\numberline {6.9.3.1}m\_\discretionary {-}{}{}absolute}{21}{subsubsection.6.9.3.1}
+\contentsline {subsubsection}{\numberline {6.9.3.2}m\_\discretionary {-}{}{}relative}{21}{subsubsection.6.9.3.2}
+\contentsline {section}{\numberline {6.10}SubsystemContainer::eat Struct Reference}{22}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{22}{subsection.6.10.1}
+\contentsline {section}{\numberline {6.11}EcosystemContainer Class Reference}{22}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{26}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Member Typedef Documentation}{26}{subsection.6.11.2}
+\contentsline {subsubsection}{\numberline {6.11.2.1}ecosys\_\discretionary {-}{}{}type}{26}{subsubsection.6.11.2.1}
+\contentsline {subsection}{\numberline {6.11.3}Member Function Documentation}{26}{subsection.6.11.3}
+\contentsline {subsubsection}{\numberline {6.11.3.1}draw\_\discretionary {-}{}{}evolv}{26}{subsubsection.6.11.3.1}
+\contentsline {subsubsection}{\numberline {6.11.3.2}draw\_\discretionary {-}{}{}evolv\_\discretionary {-}{}{}fast}{26}{subsubsection.6.11.3.2}
+\contentsline {subsubsection}{\numberline {6.11.3.3}evolv}{27}{subsubsection.6.11.3.3}
+\contentsline {subsubsection}{\numberline {6.11.3.4}evolv}{27}{subsubsection.6.11.3.4}
+\contentsline {subsubsection}{\numberline {6.11.3.5}evolv}{27}{subsubsection.6.11.3.5}
+\contentsline {subsubsection}{\numberline {6.11.3.6}FillRandom}{28}{subsubsection.6.11.3.6}
+\contentsline {subsubsection}{\numberline {6.11.3.7}initialize}{28}{subsubsection.6.11.3.7}
+\contentsline {subsubsection}{\numberline {6.11.3.8}initialize}{28}{subsubsection.6.11.3.8}
+\contentsline {subsubsection}{\numberline {6.11.3.9}insert}{28}{subsubsection.6.11.3.9}
+\contentsline {subsubsection}{\numberline {6.11.3.10}insert}{29}{subsubsection.6.11.3.10}
+\contentsline {subsubsection}{\numberline {6.11.3.11}is\_\discretionary {-}{}{}full}{29}{subsubsection.6.11.3.11}
+\contentsline {subsubsection}{\numberline {6.11.3.12}m\_\discretionary {-}{}{}bound\_\discretionary {-}{}{}translator}{29}{subsubsection.6.11.3.12}
+\contentsline {subsubsection}{\numberline {6.11.3.13}m\_\discretionary {-}{}{}dead}{30}{subsubsection.6.11.3.13}
+\contentsline {subsubsection}{\numberline {6.11.3.14}m\_\discretionary {-}{}{}dead}{30}{subsubsection.6.11.3.14}
+\contentsline {subsubsection}{\numberline {6.11.3.15}m\_\discretionary {-}{}{}dead}{30}{subsubsection.6.11.3.15}
+\contentsline {subsubsection}{\numberline {6.11.3.16}m\_\discretionary {-}{}{}dead}{30}{subsubsection.6.11.3.16}
+\contentsline {subsubsection}{\numberline {6.11.3.17}m\_\discretionary {-}{}{}dead}{31}{subsubsection.6.11.3.17}
+\contentsline {subsubsection}{\numberline {6.11.3.18}m\_\discretionary {-}{}{}dead}{31}{subsubsection.6.11.3.18}
+\contentsline {subsubsection}{\numberline {6.11.3.19}m\_\discretionary {-}{}{}migrate}{31}{subsubsection.6.11.3.19}
+\contentsline {subsubsection}{\numberline {6.11.3.20}m\_\discretionary {-}{}{}migrate}{32}{subsubsection.6.11.3.20}
+\contentsline {subsubsection}{\numberline {6.11.3.21}m\_\discretionary {-}{}{}newborn}{33}{subsubsection.6.11.3.21}
+\contentsline {subsubsection}{\numberline {6.11.3.22}m\_\discretionary {-}{}{}newborn}{33}{subsubsection.6.11.3.22}
+\contentsline {subsubsection}{\numberline {6.11.3.23}m\_\discretionary {-}{}{}rand\_\discretionary {-}{}{}int}{33}{subsubsection.6.11.3.23}
+\contentsline {subsubsection}{\numberline {6.11.3.24}m\_\discretionary {-}{}{}where\_\discretionary {-}{}{}to\_\discretionary {-}{}{}move}{34}{subsubsection.6.11.3.24}
+\contentsline {subsubsection}{\numberline {6.11.3.25}specied\_\discretionary {-}{}{}population}{34}{subsubsection.6.11.3.25}
+\contentsline {subsubsection}{\numberline {6.11.3.26}step}{34}{subsubsection.6.11.3.26}
+\contentsline {subsubsection}{\numberline {6.11.3.27}step}{35}{subsubsection.6.11.3.27}
+\contentsline {subsubsection}{\numberline {6.11.3.28}subsystem}{35}{subsubsection.6.11.3.28}
+\contentsline {subsubsection}{\numberline {6.11.3.29}subsystem}{35}{subsubsection.6.11.3.29}
+\contentsline {subsection}{\numberline {6.11.4}Member Data Documentation}{35}{subsection.6.11.4}
+\contentsline {subsubsection}{\numberline {6.11.4.1}m\_\discretionary {-}{}{}ecosystem}{35}{subsubsection.6.11.4.1}
+\contentsline {subsubsection}{\numberline {6.11.4.2}m\_\discretionary {-}{}{}last\_\discretionary {-}{}{}existance\_\discretionary {-}{}{}id}{35}{subsubsection.6.11.4.2}
+\contentsline {subsubsection}{\numberline {6.11.4.3}m\_\discretionary {-}{}{}species\_\discretionary {-}{}{}controller}{36}{subsubsection.6.11.4.3}
+\contentsline {section}{\numberline {6.12}Existance Class Reference}{36}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{37}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}Member Typedef Documentation}{37}{subsection.6.12.2}
+\contentsline {subsubsection}{\numberline {6.12.2.1}id\_\discretionary {-}{}{}type}{37}{subsubsection.6.12.2.1}
+\contentsline {subsection}{\numberline {6.12.3}Member Function Documentation}{38}{subsection.6.12.3}
+\contentsline {subsubsection}{\numberline {6.12.3.1}birth\_\discretionary {-}{}{}date}{38}{subsubsection.6.12.3.1}
+\contentsline {subsubsection}{\numberline {6.12.3.2}id\_\discretionary {-}{}{}number}{38}{subsubsection.6.12.3.2}
+\contentsline {subsubsection}{\numberline {6.12.3.3}is\_\discretionary {-}{}{}alive}{38}{subsubsection.6.12.3.3}
+\contentsline {subsection}{\numberline {6.12.4}Member Data Documentation}{38}{subsection.6.12.4}
+\contentsline {subsubsection}{\numberline {6.12.4.1}m\_\discretionary {-}{}{}birth\_\discretionary {-}{}{}date}{38}{subsubsection.6.12.4.1}
+\contentsline {subsubsection}{\numberline {6.12.4.2}m\_\discretionary {-}{}{}id\_\discretionary {-}{}{}number}{39}{subsubsection.6.12.4.2}
+\contentsline {section}{\numberline {6.13}Gender Class Reference}{39}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{40}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}Constructor \& Destructor Documentation}{41}{subsection.6.13.2}
+\contentsline {subsubsection}{\numberline {6.13.2.1}Gender}{41}{subsubsection.6.13.2.1}
+\contentsline {subsubsection}{\numberline {6.13.2.2}Gender}{41}{subsubsection.6.13.2.2}
+\contentsline {subsection}{\numberline {6.13.3}Member Function Documentation}{41}{subsection.6.13.3}
+\contentsline {subsubsection}{\numberline {6.13.3.1}change\_\discretionary {-}{}{}gender}{41}{subsubsection.6.13.3.1}
+\contentsline {subsubsection}{\numberline {6.13.3.2}change\_\discretionary {-}{}{}gender}{41}{subsubsection.6.13.3.2}
+\contentsline {subsubsection}{\numberline {6.13.3.3}numerical\_\discretionary {-}{}{}gender}{42}{subsubsection.6.13.3.3}
+\contentsline {subsection}{\numberline {6.13.4}Friends And Related Function Documentation}{42}{subsection.6.13.4}
+\contentsline {subsubsection}{\numberline {6.13.4.1}operator$<$$<$}{42}{subsubsection.6.13.4.1}
+\contentsline {section}{\numberline {6.14}Grafico Class Reference}{42}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{43}{subsection.6.14.1}
+\contentsline {section}{\numberline {6.15}SubsystemContainer::id Struct Reference}{43}{section.6.15}
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{43}{subsection.6.15.1}
+\contentsline {section}{\numberline {6.16}IndividualAnimal Class Reference}{43}{section.6.16}
+\contentsline {subsection}{\numberline {6.16.1}Detailed Description}{44}{subsection.6.16.1}
+\contentsline {subsection}{\numberline {6.16.2}Constructor \& Destructor Documentation}{45}{subsection.6.16.2}
+\contentsline {subsubsection}{\numberline {6.16.2.1}IndividualAnimal}{45}{subsubsection.6.16.2.1}
+\contentsline {subsubsection}{\numberline {6.16.2.2}$\sim $IndividualAnimal}{45}{subsubsection.6.16.2.2}
+\contentsline {subsection}{\numberline {6.16.3}Friends And Related Function Documentation}{45}{subsection.6.16.3}
+\contentsline {subsubsection}{\numberline {6.16.3.1}operator$<$$<$}{45}{subsubsection.6.16.3.1}
+\contentsline {subsection}{\numberline {6.16.4}Member Data Documentation}{45}{subsection.6.16.4}
+\contentsline {subsubsection}{\numberline {6.16.4.1}m\_\discretionary {-}{}{}appetite}{45}{subsubsection.6.16.4.1}
+\contentsline {subsubsection}{\numberline {6.16.4.2}m\_\discretionary {-}{}{}libido}{45}{subsubsection.6.16.4.2}
+\contentsline {section}{\numberline {6.17}IndividualVegetable Class Reference}{46}{section.6.17}
+\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{47}{subsection.6.17.1}
+\contentsline {subsection}{\numberline {6.17.2}Friends And Related Function Documentation}{47}{subsection.6.17.2}
+\contentsline {subsubsection}{\numberline {6.17.2.1}operator$<$$<$}{47}{subsubsection.6.17.2.1}
+\contentsline {section}{\numberline {6.18}Like Struct Reference}{47}{section.6.18}
+\contentsline {subsection}{\numberline {6.18.1}Detailed Description}{48}{subsection.6.18.1}
+\contentsline {subsection}{\numberline {6.18.2}Constructor \& Destructor Documentation}{49}{subsection.6.18.2}
+\contentsline {subsubsection}{\numberline {6.18.2.1}Like}{49}{subsubsection.6.18.2.1}
+\contentsline {subsection}{\numberline {6.18.3}Member Function Documentation}{49}{subsection.6.18.3}
+\contentsline {subsubsection}{\numberline {6.18.3.1}is\_\discretionary {-}{}{}full}{49}{subsubsection.6.18.3.1}
+\contentsline {subsection}{\numberline {6.18.4}Member Data Documentation}{49}{subsection.6.18.4}
+\contentsline {subsubsection}{\numberline {6.18.4.1}like\_\discretionary {-}{}{}factor}{49}{subsubsection.6.18.4.1}
+\contentsline {section}{\numberline {6.19}LikeFactorCmp Struct Reference}{49}{section.6.19}
+\contentsline {subsection}{\numberline {6.19.1}Detailed Description}{50}{subsection.6.19.1}
+\contentsline {section}{\numberline {6.20}LikeRefCmp Struct Reference}{50}{section.6.20}
+\contentsline {subsection}{\numberline {6.20.1}Detailed Description}{50}{subsection.6.20.1}
+\contentsline {section}{\numberline {6.21}PopulationVariation Struct Reference}{50}{section.6.21}
+\contentsline {subsection}{\numberline {6.21.1}Detailed Description}{51}{subsection.6.21.1}
+\contentsline {subsection}{\numberline {6.21.2}Member Data Documentation}{52}{subsection.6.21.2}
+\contentsline {subsubsection}{\numberline {6.21.2.1}variation}{52}{subsubsection.6.21.2.1}
+\contentsline {section}{\numberline {6.22}SubsystemContainer::reproduction Struct Reference}{52}{section.6.22}
+\contentsline {subsection}{\numberline {6.22.1}Detailed Description}{52}{subsection.6.22.1}
+\contentsline {section}{\numberline {6.23}SubsystemContainer::spec\_\discretionary {-}{}{}id Struct Reference}{52}{section.6.23}
+\contentsline {subsection}{\numberline {6.23.1}Detailed Description}{52}{subsection.6.23.1}
+\contentsline {section}{\numberline {6.24}Specied Class Reference}{53}{section.6.24}
+\contentsline {subsection}{\numberline {6.24.1}Detailed Description}{55}{subsection.6.24.1}
+\contentsline {subsection}{\numberline {6.24.2}Constructor \& Destructor Documentation}{55}{subsection.6.24.2}
+\contentsline {subsubsection}{\numberline {6.24.2.1}Specied}{55}{subsubsection.6.24.2.1}
+\contentsline {subsubsection}{\numberline {6.24.2.2}$\sim $Specied}{55}{subsubsection.6.24.2.2}
+\contentsline {subsection}{\numberline {6.24.3}Member Function Documentation}{55}{subsection.6.24.3}
+\contentsline {subsubsection}{\numberline {6.24.3.1}calorie}{55}{subsubsection.6.24.3.1}
+\contentsline {subsubsection}{\numberline {6.24.3.2}health\_\discretionary {-}{}{}status}{55}{subsubsection.6.24.3.2}
+\contentsline {subsubsection}{\numberline {6.24.3.3}is\_\discretionary {-}{}{}alive}{56}{subsubsection.6.24.3.3}
+\contentsline {subsubsection}{\numberline {6.24.3.4}life\_\discretionary {-}{}{}coast}{56}{subsubsection.6.24.3.4}
+\contentsline {subsubsection}{\numberline {6.24.3.5}life\_\discretionary {-}{}{}space}{56}{subsubsection.6.24.3.5}
+\contentsline {subsubsection}{\numberline {6.24.3.6}species\_\discretionary {-}{}{}id}{56}{subsubsection.6.24.3.6}
+\contentsline {subsubsection}{\numberline {6.24.3.7}species\_\discretionary {-}{}{}name}{56}{subsubsection.6.24.3.7}
+\contentsline {subsection}{\numberline {6.24.4}Member Data Documentation}{57}{subsection.6.24.4}
+\contentsline {subsubsection}{\numberline {6.24.4.1}m\_\discretionary {-}{}{}calorie}{57}{subsubsection.6.24.4.1}
+\contentsline {subsubsection}{\numberline {6.24.4.2}m\_\discretionary {-}{}{}health\_\discretionary {-}{}{}status}{57}{subsubsection.6.24.4.2}
+\contentsline {subsubsection}{\numberline {6.24.4.3}m\_\discretionary {-}{}{}life\_\discretionary {-}{}{}coast}{57}{subsubsection.6.24.4.3}
+\contentsline {subsubsection}{\numberline {6.24.4.4}m\_\discretionary {-}{}{}life\_\discretionary {-}{}{}space}{57}{subsubsection.6.24.4.4}
+\contentsline {subsubsection}{\numberline {6.24.4.5}m\_\discretionary {-}{}{}species\_\discretionary {-}{}{}id}{58}{subsubsection.6.24.4.5}
+\contentsline {subsubsection}{\numberline {6.24.4.6}m\_\discretionary {-}{}{}species\_\discretionary {-}{}{}name}{58}{subsubsection.6.24.4.6}
+\contentsline {section}{\numberline {6.25}SpeciesController Class Reference}{58}{section.6.25}
+\contentsline {subsection}{\numberline {6.25.1}Detailed Description}{60}{subsection.6.25.1}
+\contentsline {subsection}{\numberline {6.25.2}Member Typedef Documentation}{60}{subsection.6.25.2}
+\contentsline {subsubsection}{\numberline {6.25.2.1}infos\_\discretionary {-}{}{}const\_\discretionary {-}{}{}it}{60}{subsubsection.6.25.2.1}
+\contentsline {subsubsection}{\numberline {6.25.2.2}infos\_\discretionary {-}{}{}it}{61}{subsubsection.6.25.2.2}
+\contentsline {subsubsection}{\numberline {6.25.2.3}infos\_\discretionary {-}{}{}tp}{61}{subsubsection.6.25.2.3}
+\contentsline {subsection}{\numberline {6.25.3}Constructor \& Destructor Documentation}{61}{subsection.6.25.3}
+\contentsline {subsubsection}{\numberline {6.25.3.1}SpeciesController}{61}{subsubsection.6.25.3.1}
+\contentsline {subsection}{\numberline {6.25.4}Member Function Documentation}{61}{subsection.6.25.4}
+\contentsline {subsubsection}{\numberline {6.25.4.1}check}{61}{subsubsection.6.25.4.1}
+\contentsline {subsubsection}{\numberline {6.25.4.2}get\_\discretionary {-}{}{}info}{62}{subsubsection.6.25.4.2}
+\contentsline {subsubsection}{\numberline {6.25.4.3}get\_\discretionary {-}{}{}infos}{62}{subsubsection.6.25.4.3}
+\contentsline {subsubsection}{\numberline {6.25.4.4}get\_\discretionary {-}{}{}like\_\discretionary {-}{}{}factor}{62}{subsubsection.6.25.4.4}
+\contentsline {subsubsection}{\numberline {6.25.4.5}string\_\discretionary {-}{}{}parser}{62}{subsubsection.6.25.4.5}
+\contentsline {subsection}{\numberline {6.25.5}Friends And Related Function Documentation}{63}{subsection.6.25.5}
+\contentsline {subsubsection}{\numberline {6.25.5.1}operator$>$$>$}{63}{subsubsection.6.25.5.1}
+\contentsline {subsubsection}{\numberline {6.25.5.2}operator$>$$>$}{64}{subsubsection.6.25.5.2}
+\contentsline {subsection}{\numberline {6.25.6}Member Data Documentation}{64}{subsection.6.25.6}
+\contentsline {subsubsection}{\numberline {6.25.6.1}m\_\discretionary {-}{}{}infos}{64}{subsubsection.6.25.6.1}
+\contentsline {section}{\numberline {6.26}SpeciesInfo Struct Reference}{64}{section.6.26}
+\contentsline {subsection}{\numberline {6.26.1}Detailed Description}{67}{subsection.6.26.1}
+\contentsline {subsection}{\numberline {6.26.2}Member Typedef Documentation}{67}{subsection.6.26.2}
+\contentsline {subsubsection}{\numberline {6.26.2.1}likings\_\discretionary {-}{}{}by\_\discretionary {-}{}{}lk\_\discretionary {-}{}{}factor\_\discretionary {-}{}{}tp}{67}{subsubsection.6.26.2.1}
+\contentsline {subsection}{\numberline {6.26.3}Member Function Documentation}{68}{subsection.6.26.3}
+\contentsline {subsubsection}{\numberline {6.26.3.1}get\_\discretionary {-}{}{}info\_\discretionary {-}{}{}string}{68}{subsubsection.6.26.3.1}
+\contentsline {subsubsection}{\numberline {6.26.3.2}get\_\discretionary {-}{}{}like\_\discretionary {-}{}{}factor}{68}{subsubsection.6.26.3.2}
+\contentsline {subsubsection}{\numberline {6.26.3.3}insert\_\discretionary {-}{}{}like}{68}{subsubsection.6.26.3.3}
+\contentsline {subsection}{\numberline {6.26.4}Friends And Related Function Documentation}{68}{subsection.6.26.4}
+\contentsline {subsubsection}{\numberline {6.26.4.1}operator$<$$<$}{68}{subsubsection.6.26.4.1}
+\contentsline {subsubsection}{\numberline {6.26.4.2}operator$>$$>$}{68}{subsubsection.6.26.4.2}
+\contentsline {subsection}{\numberline {6.26.5}Member Data Documentation}{69}{subsection.6.26.5}
+\contentsline {subsubsection}{\numberline {6.26.5.1}calorie}{69}{subsubsection.6.26.5.1}
+\contentsline {subsubsection}{\numberline {6.26.5.2}health\_\discretionary {-}{}{}status}{69}{subsubsection.6.26.5.2}
+\contentsline {subsubsection}{\numberline {6.26.5.3}is\_\discretionary {-}{}{}animal}{69}{subsubsection.6.26.5.3}
+\contentsline {subsubsection}{\numberline {6.26.5.4}life\_\discretionary {-}{}{}coast}{69}{subsubsection.6.26.5.4}
+\contentsline {subsubsection}{\numberline {6.26.5.5}life\_\discretionary {-}{}{}space}{70}{subsubsection.6.26.5.5}
+\contentsline {subsubsection}{\numberline {6.26.5.6}likings}{70}{subsubsection.6.26.5.6}
+\contentsline {subsubsection}{\numberline {6.26.5.7}likings\_\discretionary {-}{}{}by\_\discretionary {-}{}{}lk\_\discretionary {-}{}{}factor}{70}{subsubsection.6.26.5.7}
+\contentsline {subsubsection}{\numberline {6.26.5.8}m\_\discretionary {-}{}{}total\_\discretionary {-}{}{}species\_\discretionary {-}{}{}number}{70}{subsubsection.6.26.5.8}
+\contentsline {subsubsection}{\numberline {6.26.5.9}species\_\discretionary {-}{}{}id}{71}{subsubsection.6.26.5.9}
+\contentsline {subsubsection}{\numberline {6.26.5.10}species\_\discretionary {-}{}{}name}{71}{subsubsection.6.26.5.10}
+\contentsline {section}{\numberline {6.27}StepLog Struct Reference}{71}{section.6.27}
+\contentsline {subsection}{\numberline {6.27.1}Detailed Description}{72}{subsection.6.27.1}
+\contentsline {subsection}{\numberline {6.27.2}Member Data Documentation}{72}{subsection.6.27.2}
+\contentsline {subsubsection}{\numberline {6.27.2.1}variations}{72}{subsubsection.6.27.2.1}
+\contentsline {section}{\numberline {6.28}SubsystemContainer Class Reference}{72}{section.6.28}
+\contentsline {subsection}{\numberline {6.28.1}Detailed Description}{77}{subsection.6.28.1}
+\contentsline {subsection}{\numberline {6.28.2}Member Typedef Documentation}{77}{subsection.6.28.2}
+\contentsline {subsubsection}{\numberline {6.28.2.1}animal\_\discretionary {-}{}{}set}{77}{subsubsection.6.28.2.1}
+\contentsline {subsubsection}{\numberline {6.28.2.2}subsystem\_\discretionary {-}{}{}tp}{78}{subsubsection.6.28.2.2}
+\contentsline {subsubsection}{\numberline {6.28.2.3}vegetable\_\discretionary {-}{}{}set}{78}{subsubsection.6.28.2.3}
+\contentsline {subsection}{\numberline {6.28.3}Constructor \& Destructor Documentation}{78}{subsection.6.28.3}
+\contentsline {subsubsection}{\numberline {6.28.3.1}SubsystemContainer}{78}{subsubsection.6.28.3.1}
+\contentsline {subsection}{\numberline {6.28.4}Member Function Documentation}{79}{subsection.6.28.4}
+\contentsline {subsubsection}{\numberline {6.28.4.1}count\_\discretionary {-}{}{}vivents}{79}{subsubsection.6.28.4.1}
+\contentsline {subsubsection}{\numberline {6.28.4.2}count\_\discretionary {-}{}{}vivents}{79}{subsubsection.6.28.4.2}
+\contentsline {subsubsection}{\numberline {6.28.4.3}find\_\discretionary {-}{}{}animal}{79}{subsubsection.6.28.4.3}
+\contentsline {subsubsection}{\numberline {6.28.4.4}find\_\discretionary {-}{}{}vegetable}{80}{subsubsection.6.28.4.4}
+\contentsline {subsubsection}{\numberline {6.28.4.5}insert}{80}{subsubsection.6.28.4.5}
+\contentsline {subsubsection}{\numberline {6.28.4.6}is\_\discretionary {-}{}{}full}{80}{subsubsection.6.28.4.6}
+\contentsline {subsubsection}{\numberline {6.28.4.7}is\_\discretionary {-}{}{}full}{80}{subsubsection.6.28.4.7}
+\contentsline {subsubsection}{\numberline {6.28.4.8}is\_\discretionary {-}{}{}full}{81}{subsubsection.6.28.4.8}
+\contentsline {subsubsection}{\numberline {6.28.4.9}remove}{81}{subsubsection.6.28.4.9}
+\contentsline {subsection}{\numberline {6.28.5}Friends And Related Function Documentation}{81}{subsection.6.28.5}
+\contentsline {subsubsection}{\numberline {6.28.5.1}operator$<$$<$}{81}{subsubsection.6.28.5.1}
+\contentsline {subsection}{\numberline {6.28.6}Member Data Documentation}{81}{subsection.6.28.6}
+\contentsline {subsubsection}{\numberline {6.28.6.1}m\_\discretionary {-}{}{}sub\_\discretionary {-}{}{}ecosystem}{81}{subsubsection.6.28.6.1}
+\contentsline {section}{\numberline {6.29}Vegetable Class Reference}{82}{section.6.29}
+\contentsline {subsection}{\numberline {6.29.1}Detailed Description}{82}{subsection.6.29.1}
+\contentsline {section}{\numberline {6.30}Vivent Class Reference}{83}{section.6.30}
+\contentsline {subsection}{\numberline {6.30.1}Detailed Description}{84}{subsection.6.30.1}
+\contentsline {subsection}{\numberline {6.30.2}Constructor \& Destructor Documentation}{84}{subsection.6.30.2}
+\contentsline {subsubsection}{\numberline {6.30.2.1}Vivent}{84}{subsubsection.6.30.2.1}
+\contentsline {subsubsection}{\numberline {6.30.2.2}$\sim $Vivent}{84}{subsubsection.6.30.2.2}
+\contentsline {subsection}{\numberline {6.30.3}Member Function Documentation}{84}{subsection.6.30.3}
+\contentsline {subsubsection}{\numberline {6.30.3.1}gender}{84}{subsubsection.6.30.3.1}
+\contentsline {subsubsection}{\numberline {6.30.3.2}hp}{85}{subsubsection.6.30.3.2}
+\contentsline {subsubsection}{\numberline {6.30.3.3}is\_\discretionary {-}{}{}alive}{85}{subsubsection.6.30.3.3}
+\contentsline {subsection}{\numberline {6.30.4}Member Data Documentation}{85}{subsection.6.30.4}
+\contentsline {subsubsection}{\numberline {6.30.4.1}m\_\discretionary {-}{}{}gender}{85}{subsubsection.6.30.4.1}
+\contentsline {subsubsection}{\numberline {6.30.4.2}m\_\discretionary {-}{}{}hp}{85}{subsubsection.6.30.4.2}
+\contentsline {chapter}{\numberline {7}File Documentation}{87}{chapter.7}
+\contentsline {section}{\numberline {7.1}sources/animal.cpp File Reference}{87}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Detailed Description}{87}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}sources/animal.h File Reference}{87}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{87}{subsection.7.2.1}
+\contentsline {section}{\numberline {7.3}sources/beeings.h File Reference}{88}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{88}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}sources/classcompares.hpp File Reference}{88}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{88}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}sources/controller.h File Reference}{89}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Detailed Description}{89}{subsection.7.5.1}
+\contentsline {section}{\numberline {7.6}sources/ecosystem.h File Reference}{89}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{89}{subsection.7.6.1}
+\contentsline {section}{\numberline {7.7}sources/existance.cpp File Reference}{90}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Detailed Description}{90}{subsection.7.7.1}
+\contentsline {section}{\numberline {7.8}sources/existance.h File Reference}{90}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{90}{subsection.7.8.1}
+\contentsline {section}{\numberline {7.9}sources/fieldchangers.hpp File Reference}{90}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Detailed Description}{91}{subsection.7.9.1}
+\contentsline {section}{\numberline {7.10}sources/gender.cpp File Reference}{91}{section.7.10}
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{91}{subsection.7.10.1}
+\contentsline {subsection}{\numberline {7.10.2}Function Documentation}{91}{subsection.7.10.2}
+\contentsline {subsubsection}{\numberline {7.10.2.1}operator$<$$<$}{91}{subsubsection.7.10.2.1}
+\contentsline {section}{\numberline {7.11}sources/gender.h File Reference}{91}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Detailed Description}{92}{subsection.7.11.1}
+\contentsline {section}{\numberline {7.12}sources/individualanimal.cpp File Reference}{92}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{92}{subsection.7.12.1}
+\contentsline {subsection}{\numberline {7.12.2}Function Documentation}{92}{subsection.7.12.2}
+\contentsline {subsubsection}{\numberline {7.12.2.1}operator$<$$<$}{92}{subsubsection.7.12.2.1}
+\contentsline {section}{\numberline {7.13}sources/individualanimal.h File Reference}{92}{section.7.13}
+\contentsline {subsection}{\numberline {7.13.1}Detailed Description}{93}{subsection.7.13.1}
+\contentsline {section}{\numberline {7.14}sources/individualvegetable.h File Reference}{93}{section.7.14}
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{93}{subsection.7.14.1}
+\contentsline {section}{\numberline {7.15}sources/miscellaneus.h File Reference}{93}{section.7.15}
+\contentsline {subsection}{\numberline {7.15.1}Detailed Description}{93}{subsection.7.15.1}
+\contentsline {section}{\numberline {7.16}sources/specied.h File Reference}{93}{section.7.16}
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{94}{subsection.7.16.1}
+\contentsline {section}{\numberline {7.17}sources/speciescontroller.h File Reference}{94}{section.7.17}
+\contentsline {subsection}{\numberline {7.17.1}Detailed Description}{94}{subsection.7.17.1}
+\contentsline {section}{\numberline {7.18}sources/speciesinfo.h File Reference}{94}{section.7.18}
+\contentsline {subsection}{\numberline {7.18.1}Detailed Description}{95}{subsection.7.18.1}
+\contentsline {section}{\numberline {7.19}sources/subsystemcontainer.cpp File Reference}{95}{section.7.19}
+\contentsline {subsection}{\numberline {7.19.1}Detailed Description}{95}{subsection.7.19.1}
+\contentsline {subsection}{\numberline {7.19.2}Typedef Documentation}{95}{subsection.7.19.2}
+\contentsline {subsubsection}{\numberline {7.19.2.1}SubC}{95}{subsubsection.7.19.2.1}
+\contentsline {subsection}{\numberline {7.19.3}Function Documentation}{96}{subsection.7.19.3}
+\contentsline {subsubsection}{\numberline {7.19.3.1}operator$<$$<$}{96}{subsubsection.7.19.3.1}
+\contentsline {section}{\numberline {7.20}sources/subsystemcontainer.h File Reference}{96}{section.7.20}
+\contentsline {subsection}{\numberline {7.20.1}Detailed Description}{97}{subsection.7.20.1}
+\contentsline {section}{\numberline {7.21}sources/time.h File Reference}{97}{section.7.21}
+\contentsline {subsection}{\numberline {7.21.1}Detailed Description}{97}{subsection.7.21.1}
+\contentsline {section}{\numberline {7.22}sources/vegetable.cpp File Reference}{98}{section.7.22}
+\contentsline {subsection}{\numberline {7.22.1}Detailed Description}{98}{subsection.7.22.1}
+\contentsline {section}{\numberline {7.23}sources/vegetable.h File Reference}{98}{section.7.23}
+\contentsline {subsection}{\numberline {7.23.1}Detailed Description}{98}{subsection.7.23.1}
+\contentsline {section}{\numberline {7.24}sources/vivent.h File Reference}{98}{section.7.24}
+\contentsline {subsection}{\numberline {7.24.1}Detailed Description}{99}{subsection.7.24.1}
